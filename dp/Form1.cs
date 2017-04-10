@@ -10,11 +10,15 @@ using System.Windows.Forms;
 
 namespace dp
 {
-    public partial class Form1 : Form
+    public partial class fm_Database : Form
     {
-        public Form1()
+        public fm_Database()
         {
             InitializeComponent();
         }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+                }
     }
 }
