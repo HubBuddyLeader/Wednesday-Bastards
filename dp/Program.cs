@@ -16,7 +16,10 @@ namespace dp
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
+
             Application.Run(new fm_Database());
+            Application.Run(new fm_Database());
+            //DID IT COMMIT?
         }
     }
 }
