@@ -16,7 +16,7 @@ namespace dp
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-
+            //show me the magic
             Application.Run(new fm_Database());
             Application.Run(new fm_Database());
         }
