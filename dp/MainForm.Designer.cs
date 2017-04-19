@@ -83,6 +83,7 @@
             this.lbProduct.Name = "lbProduct";
             this.lbProduct.Size = new System.Drawing.Size(169, 379);
             this.lbProduct.TabIndex = 7;
+            this.lbProduct.SelectedIndexChanged += new System.EventHandler(this.lbProduct_SelectedIndexChanged);
             // 
             // lbPrice
             // 
@@ -159,7 +160,7 @@
             this.addRecordToolStripMenuItem,
             this.editRecordToolStripMenuItem});
             this.navigateToolStripMenuItem.Name = "navigateToolStripMenuItem";
-            this.navigateToolStripMenuItem.Size = new System.Drawing.Size(122, 36);
+            this.navigateToolStripMenuItem.Size = new System.Drawing.Size(122, 38);
             this.navigateToolStripMenuItem.Text = "Navigate";
             // 
             // addRecordToolStripMenuItem
@@ -167,6 +168,7 @@
             this.addRecordToolStripMenuItem.Name = "addRecordToolStripMenuItem";
             this.addRecordToolStripMenuItem.Size = new System.Drawing.Size(269, 38);
             this.addRecordToolStripMenuItem.Text = "Add Record";
+            this.addRecordToolStripMenuItem.Click += new System.EventHandler(this.addRecordToolStripMenuItem_Click);
             // 
             // editRecordToolStripMenuItem
             // 
@@ -183,6 +185,7 @@
             this.lblExit.TabIndex = 14;
             this.lblExit.Text = "Exit";
             this.lblExit.UseVisualStyleBackColor = true;
+            this.lblExit.Click += new System.EventHandler(this.lblExit_Click);
             // 
             // fm_Database
             // 

@@ -158,13 +158,13 @@
             // addRecordToolStripMenuItem
             // 
             this.addRecordToolStripMenuItem.Name = "addRecordToolStripMenuItem";
-            this.addRecordToolStripMenuItem.Size = new System.Drawing.Size(269, 38);
+            this.addRecordToolStripMenuItem.Size = new System.Drawing.Size(235, 38);
             this.addRecordToolStripMenuItem.Text = "Main Form";
             // 
             // editRecordToolStripMenuItem
             // 
             this.editRecordToolStripMenuItem.Name = "editRecordToolStripMenuItem";
-            this.editRecordToolStripMenuItem.Size = new System.Drawing.Size(269, 38);
+            this.editRecordToolStripMenuItem.Size = new System.Drawing.Size(235, 38);
             this.editRecordToolStripMenuItem.Text = "Edit Record";
             // 
             // lblBack
@@ -176,6 +176,7 @@
             this.lblBack.TabIndex = 8;
             this.lblBack.Text = "Back";
             this.lblBack.UseVisualStyleBackColor = true;
+            this.lblBack.Click += new System.EventHandler(this.lblBack_Click);
             // 
             // AddForm
             // 
@@ -188,7 +189,7 @@
             this.Controls.Add(this.lblTitle);
             this.Controls.Add(this.grpInputData);
             this.Name = "AddForm";
-            this.Text = "Form2";
+            this.Text = "name";
             this.grpInputData.ResumeLayout(false);
             this.grpInputData.PerformLayout();
             this.msNav.ResumeLayout(false);

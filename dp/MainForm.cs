@@ -12,19 +12,11 @@ namespace dp
 {
     public partial class fm_Database : Form
     {
+        AddForm addForm = new AddForm();
+
         public fm_Database()
         {
             InitializeComponent();
-        }
-
-        private void textBox1_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-
         }
 
         private void pbShitImage_Click(object sender, EventArgs e)
@@ -35,6 +27,21 @@ namespace dp
         private void lblTitle_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void lbProduct_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void addRecordToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            addForm.Show();
+        }
+
+        private void lblExit_Click(object sender, EventArgs e)
+        {
+            Close();
         }
     }
 }
