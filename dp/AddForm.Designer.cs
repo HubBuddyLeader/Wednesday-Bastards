@@ -111,13 +111,14 @@
             // 
             // btnUpload
             // 
+            this.btnUpload.BackColor = System.Drawing.Color.White;
             this.btnUpload.ForeColor = System.Drawing.Color.Black;
             this.btnUpload.Location = new System.Drawing.Point(328, 394);
             this.btnUpload.Name = "btnUpload";
             this.btnUpload.Size = new System.Drawing.Size(216, 47);
             this.btnUpload.TabIndex = 0;
             this.btnUpload.Text = "Upload";
-            this.btnUpload.UseVisualStyleBackColor = true;
+            this.btnUpload.UseVisualStyleBackColor = false;
             // 
             // lblTitle
             // 
@@ -132,13 +133,14 @@
             // 
             // lblClose
             // 
+            this.lblClose.BackColor = System.Drawing.Color.White;
             this.lblClose.ForeColor = System.Drawing.Color.Black;
             this.lblClose.Location = new System.Drawing.Point(942, 723);
             this.lblClose.Name = "lblClose";
             this.lblClose.Size = new System.Drawing.Size(216, 47);
             this.lblClose.TabIndex = 8;
             this.lblClose.Text = "Close";
-            this.lblClose.UseVisualStyleBackColor = true;
+            this.lblClose.UseVisualStyleBackColor = false;
             this.lblClose.Click += new System.EventHandler(this.lblBack_Click);
             // 
             // AddForm

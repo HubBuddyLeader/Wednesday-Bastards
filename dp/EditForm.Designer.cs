@@ -56,13 +56,14 @@
             // 
             // lblClose
             // 
+            this.lblClose.BackColor = System.Drawing.Color.White;
             this.lblClose.ForeColor = System.Drawing.Color.Black;
             this.lblClose.Location = new System.Drawing.Point(942, 723);
             this.lblClose.Name = "lblClose";
             this.lblClose.Size = new System.Drawing.Size(216, 47);
             this.lblClose.TabIndex = 15;
             this.lblClose.Text = "Close";
-            this.lblClose.UseVisualStyleBackColor = true;
+            this.lblClose.UseVisualStyleBackColor = false;
             this.lblClose.Click += new System.EventHandler(this.lblBack_Click);
             // 
             // grpInputData
@@ -136,13 +137,14 @@
             // 
             // btnUpload
             // 
+            this.btnUpload.BackColor = System.Drawing.Color.White;
             this.btnUpload.ForeColor = System.Drawing.Color.Black;
             this.btnUpload.Location = new System.Drawing.Point(328, 394);
             this.btnUpload.Name = "btnUpload";
             this.btnUpload.Size = new System.Drawing.Size(216, 47);
             this.btnUpload.TabIndex = 0;
             this.btnUpload.Text = "Update";
-            this.btnUpload.UseVisualStyleBackColor = true;
+            this.btnUpload.UseVisualStyleBackColor = false;
             // 
             // comboBox1
             // 
@@ -157,6 +159,7 @@
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(265, 33);
             this.comboBox1.TabIndex = 17;
+            this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
             // label1
             // 
