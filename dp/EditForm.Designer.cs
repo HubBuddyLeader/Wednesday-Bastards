@@ -145,6 +145,7 @@
             this.btnUpload.TabIndex = 0;
             this.btnUpload.Text = "Update";
             this.btnUpload.UseVisualStyleBackColor = false;
+            this.btnUpload.Click += new System.EventHandler(this.btnUpload_Click);
             // 
             // comboBox1
             // 

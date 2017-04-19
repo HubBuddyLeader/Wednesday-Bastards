@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.grpInputData = new System.Windows.Forms.GroupBox();
+            this.btnInsert = new System.Windows.Forms.Button();
             this.lblStock = new System.Windows.Forms.Label();
             this.lblPrice = new System.Windows.Forms.Label();
             this.lblProduct = new System.Windows.Forms.Label();
@@ -37,13 +38,12 @@
             this.txtPrice = new System.Windows.Forms.TextBox();
             this.lblTitle = new System.Windows.Forms.Label();
             this.lblClose = new System.Windows.Forms.Button();
-            this.btnUpdate = new System.Windows.Forms.Button();
             this.grpInputData.SuspendLayout();
             this.SuspendLayout();
             // 
             // grpInputData
             // 
-            this.grpInputData.Controls.Add(this.btnUpdate);
+            this.grpInputData.Controls.Add(this.btnInsert);
             this.grpInputData.Controls.Add(this.lblStock);
             this.grpInputData.Controls.Add(this.lblPrice);
             this.grpInputData.Controls.Add(this.lblProduct);
@@ -57,6 +57,18 @@
             this.grpInputData.TabIndex = 6;
             this.grpInputData.TabStop = false;
             this.grpInputData.Text = "Input Data";
+            // 
+            // btnInsert
+            // 
+            this.btnInsert.BackColor = System.Drawing.Color.White;
+            this.btnInsert.ForeColor = System.Drawing.Color.Black;
+            this.btnInsert.Location = new System.Drawing.Point(328, 394);
+            this.btnInsert.Name = "btnInsert";
+            this.btnInsert.Size = new System.Drawing.Size(216, 47);
+            this.btnInsert.TabIndex = 17;
+            this.btnInsert.Text = "Insert";
+            this.btnInsert.UseVisualStyleBackColor = false;
+            this.btnInsert.Click += new System.EventHandler(this.btnUpdate_Click);
             // 
             // lblStock
             // 
@@ -135,18 +147,6 @@
             this.lblClose.UseVisualStyleBackColor = false;
             this.lblClose.Click += new System.EventHandler(this.lblClose_Click);
             // 
-            // btnUpdate
-            // 
-            this.btnUpdate.BackColor = System.Drawing.Color.White;
-            this.btnUpdate.ForeColor = System.Drawing.Color.Black;
-            this.btnUpdate.Location = new System.Drawing.Point(328, 394);
-            this.btnUpdate.Name = "btnUpdate";
-            this.btnUpdate.Size = new System.Drawing.Size(216, 47);
-            this.btnUpdate.TabIndex = 17;
-            this.btnUpdate.Text = "Insert";
-            this.btnUpdate.UseVisualStyleBackColor = false;
-            this.btnUpdate.Click += new System.EventHandler(this.btnUpdate_Click);
-            // 
             // AddForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
@@ -176,6 +176,6 @@
         private System.Windows.Forms.TextBox txtPrice;
         private System.Windows.Forms.Label lblTitle;
         private System.Windows.Forms.Button lblClose;
-        private System.Windows.Forms.Button btnUpdate;
+        private System.Windows.Forms.Button btnInsert;
     }
 }
