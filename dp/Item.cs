@@ -6,16 +6,17 @@ using System.Threading.Tasks;
 
 namespace dp
 {
-    class Item
+    public class Item
     {
-        private int _stock;
+        private int _stock, _id;
         private string _name;
         private double _price;
 
-        public Item(string name, int stock, double price) {
+        public Item(string name, int stock, double price, int id) {
             _name = name;
             _stock = stock;
             _price = price;
+            _id = id;
         }
 
         public int Stock {

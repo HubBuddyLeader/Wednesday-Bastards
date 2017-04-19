@@ -11,7 +11,7 @@ namespace dp
         /// <summary>
         /// The main entry point for the application.
         /// </summary>
-        //program redone
+        //program redon
         [STAThread]
         static void Main()
         {
@@ -20,6 +20,9 @@ namespace dp
             //show me the magic
             Application.Run(new fm_Database());
             Application.Run(new fm_Database());
+            //magic showed
+
+
         }
     }
 }
