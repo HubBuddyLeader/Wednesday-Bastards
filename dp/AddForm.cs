@@ -29,36 +29,60 @@ namespace dp
 
         private void txtProduct_TextChanged(object sender, EventArgs e)
         {
-            //PRoduct input
-            if (!this.txtProduct.Text.All(c => Char.IsLetter(c)))
-            {
-                _validate += "Product name must contain only alphebetical characters";
-            }
-            else {
-                _name = this.txtProduct.Text;
-            }
+        
         }
 
         private void txtPrice_TextChanged(object sender, EventArgs e)
         {
-            if (!double.TryParse(this.txtPrice.Text, out _price)) {
-                _validate += " Price must be a number, ";
-            }
-            //Price input
+            
+        }
+
+        private void errorLabel_Click(object sender, EventArgs e)
+        {
+
         }
 
         private void txtStock_TextChanged(object sender, EventArgs e)
         {
-            if (!int.TryParse(this.txtPrice.Text, out _stock)){
-                _validate += " Stock must be a full number, ";
-            }
-            //Stock input
+           
         }
 
         private void btnUpload_Click(object sender, EventArgs e)
         {
-            Item newItem = new Item(_name, _stock, _price,_id);
-            _id++;
+            //Validation
+            this.errorLabel.Text = "Error : \n";
+
+            if (!this.txtProduct.Text.All(c => Char.IsLetter(c)))
+            {
+                _validate += "Product name must contain only alphebetical characters \n";
+            }
+            else {
+                _name = this.txtProduct.Text;
+            }
+            if (!double.TryParse(this.txtPrice.Text, out _price))
+            {
+                _validate += "Price must be a number \n";
+            }
+            if (!int.TryParse(this.txtStock.Text, out _stock))
+            {
+                _validate += "Stock must be a full number \n";
+            }
+
+
+            if (_validate == "")
+            {
+                this.errorLabel.Hide();
+                //add item to dataBase
+                Database.Data.Add(new Item(_name, _stock, _price, _id));
+                _id++;
+            }
+            else {
+                //Display error then clear
+                this.errorLabel.Text += _validate;
+                this.errorLabel.Show();
+                _validate = "";
+                
+            }
         }
     }
 }

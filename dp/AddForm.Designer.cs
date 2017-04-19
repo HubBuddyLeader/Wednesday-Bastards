@@ -38,6 +38,7 @@
             this.btnUpload = new System.Windows.Forms.Button();
             this.lblTitle = new System.Windows.Forms.Label();
             this.lblClose = new System.Windows.Forms.Button();
+            this.errorLabel = new System.Windows.Forms.Label();
             this.grpInputData.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -51,14 +52,10 @@
             this.grpInputData.Controls.Add(this.txtPrice);
             this.grpInputData.Controls.Add(this.btnUpload);
             this.grpInputData.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-<<<<<<< HEAD
-            this.grpInputData.Location = new System.Drawing.Point(439, 207);
-            this.grpInputData.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-=======
             this.grpInputData.Location = new System.Drawing.Point(314, 166);
->>>>>>> baee7d21113d566fbfefd98029e5c3a5306d6e7a
+            this.grpInputData.Margin = new System.Windows.Forms.Padding(4);
             this.grpInputData.Name = "grpInputData";
-            this.grpInputData.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.grpInputData.Padding = new System.Windows.Forms.Padding(4);
             this.grpInputData.Size = new System.Drawing.Size(733, 554);
             this.grpInputData.TabIndex = 6;
             this.grpInputData.TabStop = false;
@@ -100,7 +97,7 @@
             // txtProduct
             // 
             this.txtProduct.Location = new System.Drawing.Point(251, 113);
-            this.txtProduct.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtProduct.Margin = new System.Windows.Forms.Padding(4);
             this.txtProduct.Name = "txtProduct";
             this.txtProduct.Size = new System.Drawing.Size(369, 38);
             this.txtProduct.TabIndex = 2;
@@ -109,7 +106,7 @@
             // txtStock
             // 
             this.txtStock.Location = new System.Drawing.Point(251, 367);
-            this.txtStock.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtStock.Margin = new System.Windows.Forms.Padding(4);
             this.txtStock.Name = "txtStock";
             this.txtStock.Size = new System.Drawing.Size(369, 38);
             this.txtStock.TabIndex = 4;
@@ -118,7 +115,7 @@
             // txtPrice
             // 
             this.txtPrice.Location = new System.Drawing.Point(251, 236);
-            this.txtPrice.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtPrice.Margin = new System.Windows.Forms.Padding(4);
             this.txtPrice.Name = "txtPrice";
             this.txtPrice.Size = new System.Drawing.Size(369, 38);
             this.txtPrice.TabIndex = 3;
@@ -128,7 +125,7 @@
             // 
             this.btnUpload.ForeColor = System.Drawing.Color.Black;
             this.btnUpload.Location = new System.Drawing.Point(437, 489);
-            this.btnUpload.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnUpload.Margin = new System.Windows.Forms.Padding(4);
             this.btnUpload.Name = "btnUpload";
             this.btnUpload.Size = new System.Drawing.Size(288, 58);
             this.btnUpload.TabIndex = 0;
@@ -141,12 +138,8 @@
             this.lblTitle.AutoSize = true;
             this.lblTitle.Font = new System.Drawing.Font("Microsoft Sans Serif", 22.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTitle.ForeColor = System.Drawing.Color.Red;
-<<<<<<< HEAD
-            this.lblTitle.Location = new System.Drawing.Point(16, 68);
-            this.lblTitle.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-=======
             this.lblTitle.Location = new System.Drawing.Point(12, 52);
->>>>>>> baee7d21113d566fbfefd98029e5c3a5306d6e7a
+            this.lblTitle.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblTitle.Name = "lblTitle";
             this.lblTitle.Size = new System.Drawing.Size(442, 85);
             this.lblTitle.TabIndex = 7;
@@ -154,76 +147,39 @@
             // 
             // lblClose
             // 
-<<<<<<< HEAD
-            this.msNav.ImageScalingSize = new System.Drawing.Size(32, 32);
-            this.msNav.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.navigateToolStripMenuItem});
-            this.msNav.Location = new System.Drawing.Point(0, 0);
-            this.msNav.Name = "msNav";
-            this.msNav.Padding = new System.Windows.Forms.Padding(8, 2, 0, 2);
-            this.msNav.Size = new System.Drawing.Size(1560, 49);
-            this.msNav.TabIndex = 14;
-            this.msNav.Text = "Navigation Bar";
-            // 
-            // navigateToolStripMenuItem
-            // 
-            this.navigateToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.addRecordToolStripMenuItem,
-            this.editRecordToolStripMenuItem});
-            this.navigateToolStripMenuItem.Name = "navigateToolStripMenuItem";
-            this.navigateToolStripMenuItem.Size = new System.Drawing.Size(147, 45);
-            this.navigateToolStripMenuItem.Text = "Navigate";
-            // 
-            // addRecordToolStripMenuItem
-            // 
-            this.addRecordToolStripMenuItem.Name = "addRecordToolStripMenuItem";
-            this.addRecordToolStripMenuItem.Size = new System.Drawing.Size(284, 46);
-            this.addRecordToolStripMenuItem.Text = "Main Form";
-            // 
-            // editRecordToolStripMenuItem
-            // 
-            this.editRecordToolStripMenuItem.Name = "editRecordToolStripMenuItem";
-            this.editRecordToolStripMenuItem.Size = new System.Drawing.Size(284, 46);
-            this.editRecordToolStripMenuItem.Text = "Edit Record";
-            // 
-            // lblBack
-            // 
-            this.lblBack.ForeColor = System.Drawing.Color.Black;
-            this.lblBack.Location = new System.Drawing.Point(1256, 897);
-            this.lblBack.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.lblBack.Name = "lblBack";
-            this.lblBack.Size = new System.Drawing.Size(288, 58);
-            this.lblBack.TabIndex = 8;
-            this.lblBack.Text = "Back";
-            this.lblBack.UseVisualStyleBackColor = true;
-            this.lblBack.Click += new System.EventHandler(this.lblBack_Click);
-=======
             this.lblClose.ForeColor = System.Drawing.Color.Black;
-            this.lblClose.Location = new System.Drawing.Point(942, 723);
+            this.lblClose.Location = new System.Drawing.Point(1135, 862);
             this.lblClose.Name = "lblClose";
             this.lblClose.Size = new System.Drawing.Size(216, 47);
             this.lblClose.TabIndex = 8;
             this.lblClose.Text = "Close";
             this.lblClose.UseVisualStyleBackColor = true;
             this.lblClose.Click += new System.EventHandler(this.lblBack_Click);
->>>>>>> baee7d21113d566fbfefd98029e5c3a5306d6e7a
+            // 
+            // errorLabel
+            // 
+            this.errorLabel.AutoSize = true;
+            this.errorLabel.ForeColor = System.Drawing.Color.Red;
+            this.errorLabel.Location = new System.Drawing.Point(360, 806);
+            this.errorLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.errorLabel.Name = "errorLabel";
+            this.errorLabel.Size = new System.Drawing.Size(85, 32);
+            this.errorLabel.TabIndex = 9;
+            this.errorLabel.Text = "Error:";
+            this.errorLabel.Visible = false;
+            this.errorLabel.Click += new System.EventHandler(this.errorLabel_Click);
             // 
             // AddForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(16F, 31F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Black;
-<<<<<<< HEAD
-            this.ClientSize = new System.Drawing.Size(1560, 970);
-            this.Controls.Add(this.lblBack);
-            this.Controls.Add(this.msNav);
-=======
-            this.ClientSize = new System.Drawing.Size(1170, 782);
+            this.ClientSize = new System.Drawing.Size(1363, 921);
+            this.Controls.Add(this.errorLabel);
             this.Controls.Add(this.lblClose);
->>>>>>> baee7d21113d566fbfefd98029e5c3a5306d6e7a
             this.Controls.Add(this.lblTitle);
             this.Controls.Add(this.grpInputData);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "AddForm";
             this.Text = "name";
             this.grpInputData.ResumeLayout(false);
@@ -245,5 +201,6 @@
         private System.Windows.Forms.Button btnUpload;
         private System.Windows.Forms.Label lblTitle;
         private System.Windows.Forms.Button lblClose;
+        private System.Windows.Forms.Label errorLabel;
     }
 }

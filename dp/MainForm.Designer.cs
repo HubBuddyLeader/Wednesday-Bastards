@@ -52,9 +52,10 @@
             this.lblTitle.AutoSize = true;
             this.lblTitle.Font = new System.Drawing.Font("Microsoft Sans Serif", 22.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTitle.ForeColor = System.Drawing.Color.Red;
-            this.lblTitle.Location = new System.Drawing.Point(12, 52);
+            this.lblTitle.Location = new System.Drawing.Point(16, 64);
+            this.lblTitle.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblTitle.Name = "lblTitle";
-            this.lblTitle.Size = new System.Drawing.Size(353, 67);
+            this.lblTitle.Size = new System.Drawing.Size(442, 85);
             this.lblTitle.TabIndex = 1;
             this.lblTitle.Text = "PhP-SRePS";
             this.lblTitle.Click += new System.EventHandler(this.lblTitle_Click);
@@ -64,9 +65,10 @@
             this.pbShitImage.ErrorImage = ((System.Drawing.Image)(resources.GetObject("pbShitImage.ErrorImage")));
             this.pbShitImage.Image = ((System.Drawing.Image)(resources.GetObject("pbShitImage.Image")));
             this.pbShitImage.InitialImage = ((System.Drawing.Image)(resources.GetObject("pbShitImage.InitialImage")));
-            this.pbShitImage.Location = new System.Drawing.Point(24, 195);
+            this.pbShitImage.Location = new System.Drawing.Point(32, 242);
+            this.pbShitImage.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pbShitImage.Name = "pbShitImage";
-            this.pbShitImage.Size = new System.Drawing.Size(449, 470);
+            this.pbShitImage.Size = new System.Drawing.Size(599, 583);
             this.pbShitImage.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pbShitImage.TabIndex = 6;
             this.pbShitImage.TabStop = false;
@@ -78,15 +80,16 @@
             this.lbProduct.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.lbProduct.ForeColor = System.Drawing.Color.LawnGreen;
             this.lbProduct.FormattingEnabled = true;
-            this.lbProduct.ItemHeight = 25;
+            this.lbProduct.ItemHeight = 31;
             this.lbProduct.Items.AddRange(new object[] {
             "Product 1",
             "Product 2",
             "Product 3",
             "Product 4"});
-            this.lbProduct.Location = new System.Drawing.Point(535, 286);
+            this.lbProduct.Location = new System.Drawing.Point(713, 355);
+            this.lbProduct.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.lbProduct.Name = "lbProduct";
-            this.lbProduct.Size = new System.Drawing.Size(169, 375);
+            this.lbProduct.Size = new System.Drawing.Size(225, 465);
             this.lbProduct.TabIndex = 7;
             this.lbProduct.SelectedIndexChanged += new System.EventHandler(this.lbProduct_SelectedIndexChanged);
             // 
@@ -96,15 +99,16 @@
             this.lbPrice.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.lbPrice.ForeColor = System.Drawing.Color.LawnGreen;
             this.lbPrice.FormattingEnabled = true;
-            this.lbPrice.ItemHeight = 25;
+            this.lbPrice.ItemHeight = 31;
             this.lbPrice.Items.AddRange(new object[] {
             "Price 1",
             "Price 2",
             "Price 3",
             "Price 4"});
-            this.lbPrice.Location = new System.Drawing.Point(739, 286);
+            this.lbPrice.Location = new System.Drawing.Point(985, 355);
+            this.lbPrice.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.lbPrice.Name = "lbPrice";
-            this.lbPrice.Size = new System.Drawing.Size(169, 375);
+            this.lbPrice.Size = new System.Drawing.Size(225, 465);
             this.lbPrice.TabIndex = 8;
             // 
             // lbStock
@@ -113,34 +117,38 @@
             this.lbStock.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.lbStock.ForeColor = System.Drawing.Color.LawnGreen;
             this.lbStock.FormattingEnabled = true;
-            this.lbStock.ItemHeight = 25;
+            this.lbStock.ItemHeight = 31;
             this.lbStock.Items.AddRange(new object[] {
             "Stock 1",
             "Stock 2",
             "Stock 3",
             "Stock 4"});
-            this.lbStock.Location = new System.Drawing.Point(942, 286);
+            this.lbStock.Location = new System.Drawing.Point(1256, 355);
+            this.lbStock.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.lbStock.Name = "lbStock";
-            this.lbStock.Size = new System.Drawing.Size(169, 375);
+            this.lbStock.Size = new System.Drawing.Size(225, 465);
             this.lbStock.TabIndex = 9;
             // 
             // lblProducts
             // 
             this.lblProducts.AutoSize = true;
             this.lblProducts.ForeColor = System.Drawing.Color.Cyan;
-            this.lblProducts.Location = new System.Drawing.Point(530, 248);
+            this.lblProducts.Location = new System.Drawing.Point(707, 308);
+            this.lblProducts.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblProducts.Name = "lblProducts";
-            this.lblProducts.Size = new System.Drawing.Size(103, 25);
+            this.lblProducts.Size = new System.Drawing.Size(135, 32);
             this.lblProducts.TabIndex = 10;
             this.lblProducts.Text = "Products:";
+            this.lblProducts.Click += new System.EventHandler(this.lblProducts_Click);
             // 
             // lblPrices
             // 
             this.lblPrices.AutoSize = true;
             this.lblPrices.ForeColor = System.Drawing.Color.Cyan;
-            this.lblPrices.Location = new System.Drawing.Point(734, 248);
+            this.lblPrices.Location = new System.Drawing.Point(979, 308);
+            this.lblPrices.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblPrices.Name = "lblPrices";
-            this.lblPrices.Size = new System.Drawing.Size(78, 25);
+            this.lblPrices.Size = new System.Drawing.Size(102, 32);
             this.lblPrices.TabIndex = 11;
             this.lblPrices.Text = "Prices:";
             // 
@@ -148,9 +156,10 @@
             // 
             this.lblStocks.AutoSize = true;
             this.lblStocks.ForeColor = System.Drawing.Color.Cyan;
-            this.lblStocks.Location = new System.Drawing.Point(937, 248);
+            this.lblStocks.Location = new System.Drawing.Point(1249, 308);
+            this.lblStocks.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblStocks.Name = "lblStocks";
-            this.lblStocks.Size = new System.Drawing.Size(72, 25);
+            this.lblStocks.Size = new System.Drawing.Size(94, 32);
             this.lblStocks.TabIndex = 12;
             this.lblStocks.Text = "Stock:";
             // 
@@ -161,7 +170,8 @@
             this.navigateToolStripMenuItem});
             this.msNav.Location = new System.Drawing.Point(0, 0);
             this.msNav.Name = "msNav";
-            this.msNav.Size = new System.Drawing.Size(1170, 40);
+            this.msNav.Padding = new System.Windows.Forms.Padding(8, 2, 0, 2);
+            this.msNav.Size = new System.Drawing.Size(1560, 49);
             this.msNav.TabIndex = 13;
             this.msNav.Text = "Navigation Bar";
             // 
@@ -171,20 +181,20 @@
             this.addRecordToolStripMenuItem,
             this.editRecordToolStripMenuItem});
             this.navigateToolStripMenuItem.Name = "navigateToolStripMenuItem";
-            this.navigateToolStripMenuItem.Size = new System.Drawing.Size(122, 36);
+            this.navigateToolStripMenuItem.Size = new System.Drawing.Size(147, 45);
             this.navigateToolStripMenuItem.Text = "Navigate";
             // 
             // addRecordToolStripMenuItem
             // 
             this.addRecordToolStripMenuItem.Name = "addRecordToolStripMenuItem";
-            this.addRecordToolStripMenuItem.Size = new System.Drawing.Size(269, 38);
+            this.addRecordToolStripMenuItem.Size = new System.Drawing.Size(289, 46);
             this.addRecordToolStripMenuItem.Text = "Add Record";
             this.addRecordToolStripMenuItem.Click += new System.EventHandler(this.addRecordToolStripMenuItem_Click);
             // 
             // editRecordToolStripMenuItem
             // 
             this.editRecordToolStripMenuItem.Name = "editRecordToolStripMenuItem";
-            this.editRecordToolStripMenuItem.Size = new System.Drawing.Size(269, 38);
+            this.editRecordToolStripMenuItem.Size = new System.Drawing.Size(289, 46);
             this.editRecordToolStripMenuItem.Text = "Edit Record";
             this.editRecordToolStripMenuItem.Click += new System.EventHandler(this.editRecordToolStripMenuItem_Click);
             // 
@@ -195,9 +205,10 @@
             this.lblExit.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DimGray;
             this.lblExit.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.lblExit.ForeColor = System.Drawing.Color.Black;
-            this.lblExit.Location = new System.Drawing.Point(942, 723);
+            this.lblExit.Location = new System.Drawing.Point(1256, 897);
+            this.lblExit.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.lblExit.Name = "lblExit";
-            this.lblExit.Size = new System.Drawing.Size(216, 47);
+            this.lblExit.Size = new System.Drawing.Size(288, 58);
             this.lblExit.TabIndex = 14;
             this.lblExit.Text = "Exit";
             this.lblExit.UseVisualStyleBackColor = false;
@@ -207,18 +218,19 @@
             // 
             this.lblEdit.AutoSize = true;
             this.lblEdit.BackColor = System.Drawing.Color.White;
-            this.lblEdit.Location = new System.Drawing.Point(726, 734);
+            this.lblEdit.Location = new System.Drawing.Point(968, 910);
+            this.lblEdit.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblEdit.Name = "lblEdit";
-            this.lblEdit.Size = new System.Drawing.Size(182, 25);
+            this.lblEdit.Size = new System.Drawing.Size(239, 32);
             this.lblEdit.TabIndex = 18;
             this.lblEdit.Text = "Please Exit Twice";
             // 
             // fm_Database
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(16F, 31F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Black;
-            this.ClientSize = new System.Drawing.Size(1170, 782);
+            this.ClientSize = new System.Drawing.Size(1560, 970);
             this.Controls.Add(this.lblEdit);
             this.Controls.Add(this.lblExit);
             this.Controls.Add(this.lblStocks);
@@ -231,6 +243,7 @@
             this.Controls.Add(this.lblTitle);
             this.Controls.Add(this.msNav);
             this.MainMenuStrip = this.msNav;
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "fm_Database";
             this.Text = "PhP-SRePS";
             this.Load += new System.EventHandler(this.fm_Database_Load);
