@@ -13,6 +13,7 @@ namespace dp
     public partial class fm_Database : Form
     {
         AddForm addForm = new AddForm();
+        EditForm editForm = new EditForm();
 
         public fm_Database()
         {
@@ -41,7 +42,17 @@ namespace dp
 
         private void lblExit_Click(object sender, EventArgs e)
         {
-            Close();
+            this.Close();
+        }
+
+        private void editRecordToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            editForm.Show();
+        }
+
+        private void fm_Database_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

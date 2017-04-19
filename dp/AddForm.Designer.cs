@@ -37,13 +37,8 @@
             this.txtPrice = new System.Windows.Forms.TextBox();
             this.btnUpload = new System.Windows.Forms.Button();
             this.lblTitle = new System.Windows.Forms.Label();
-            this.msNav = new System.Windows.Forms.MenuStrip();
-            this.navigateToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.addRecordToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.editRecordToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.lblBack = new System.Windows.Forms.Button();
+            this.lblClose = new System.Windows.Forms.Button();
             this.grpInputData.SuspendLayout();
-            this.msNav.SuspendLayout();
             this.SuspendLayout();
             // 
             // grpInputData
@@ -56,8 +51,12 @@
             this.grpInputData.Controls.Add(this.txtPrice);
             this.grpInputData.Controls.Add(this.btnUpload);
             this.grpInputData.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+<<<<<<< HEAD
             this.grpInputData.Location = new System.Drawing.Point(439, 207);
             this.grpInputData.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+=======
+            this.grpInputData.Location = new System.Drawing.Point(314, 166);
+>>>>>>> baee7d21113d566fbfefd98029e5c3a5306d6e7a
             this.grpInputData.Name = "grpInputData";
             this.grpInputData.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.grpInputData.Size = new System.Drawing.Size(733, 554);
@@ -142,15 +141,20 @@
             this.lblTitle.AutoSize = true;
             this.lblTitle.Font = new System.Drawing.Font("Microsoft Sans Serif", 22.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTitle.ForeColor = System.Drawing.Color.Red;
+<<<<<<< HEAD
             this.lblTitle.Location = new System.Drawing.Point(16, 68);
             this.lblTitle.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+=======
+            this.lblTitle.Location = new System.Drawing.Point(12, 52);
+>>>>>>> baee7d21113d566fbfefd98029e5c3a5306d6e7a
             this.lblTitle.Name = "lblTitle";
             this.lblTitle.Size = new System.Drawing.Size(442, 85);
             this.lblTitle.TabIndex = 7;
             this.lblTitle.Text = "PhP-SRePS";
             // 
-            // msNav
+            // lblClose
             // 
+<<<<<<< HEAD
             this.msNav.ImageScalingSize = new System.Drawing.Size(32, 32);
             this.msNav.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.navigateToolStripMenuItem});
@@ -193,15 +197,30 @@
             this.lblBack.Text = "Back";
             this.lblBack.UseVisualStyleBackColor = true;
             this.lblBack.Click += new System.EventHandler(this.lblBack_Click);
+=======
+            this.lblClose.ForeColor = System.Drawing.Color.Black;
+            this.lblClose.Location = new System.Drawing.Point(942, 723);
+            this.lblClose.Name = "lblClose";
+            this.lblClose.Size = new System.Drawing.Size(216, 47);
+            this.lblClose.TabIndex = 8;
+            this.lblClose.Text = "Close";
+            this.lblClose.UseVisualStyleBackColor = true;
+            this.lblClose.Click += new System.EventHandler(this.lblBack_Click);
+>>>>>>> baee7d21113d566fbfefd98029e5c3a5306d6e7a
             // 
             // AddForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(16F, 31F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Black;
+<<<<<<< HEAD
             this.ClientSize = new System.Drawing.Size(1560, 970);
             this.Controls.Add(this.lblBack);
             this.Controls.Add(this.msNav);
+=======
+            this.ClientSize = new System.Drawing.Size(1170, 782);
+            this.Controls.Add(this.lblClose);
+>>>>>>> baee7d21113d566fbfefd98029e5c3a5306d6e7a
             this.Controls.Add(this.lblTitle);
             this.Controls.Add(this.grpInputData);
             this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
@@ -209,8 +228,6 @@
             this.Text = "name";
             this.grpInputData.ResumeLayout(false);
             this.grpInputData.PerformLayout();
-            this.msNav.ResumeLayout(false);
-            this.msNav.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -227,10 +244,6 @@
         private System.Windows.Forms.TextBox txtPrice;
         private System.Windows.Forms.Button btnUpload;
         private System.Windows.Forms.Label lblTitle;
-        private System.Windows.Forms.MenuStrip msNav;
-        private System.Windows.Forms.ToolStripMenuItem navigateToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem addRecordToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem editRecordToolStripMenuItem;
-        private System.Windows.Forms.Button lblBack;
+        private System.Windows.Forms.Button lblClose;
     }
 }

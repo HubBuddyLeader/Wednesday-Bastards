@@ -17,7 +17,6 @@ namespace dp
         private String _name, _validate = "";
         private int _id = 0, _stock;
         private double _price;
-
         public AddForm()
         {
             InitializeComponent();
@@ -25,7 +24,7 @@ namespace dp
 
         private void lblBack_Click(object sender, EventArgs e)
         {
-            secondForm.Show();
+            this.Close();
         }
 
         private void txtProduct_TextChanged(object sender, EventArgs e)
