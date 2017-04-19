@@ -42,7 +42,7 @@ namespace dp
 
         private void lblExit_Click(object sender, EventArgs e)
         {
-            this.Close();
+            Application.Exit();
         }
 
         private void editRecordToolStripMenuItem_Click(object sender, EventArgs e)

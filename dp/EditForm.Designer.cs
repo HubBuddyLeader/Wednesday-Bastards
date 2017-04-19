@@ -184,7 +184,7 @@
             this.Controls.Add(this.lblTitle);
             this.ForeColor = System.Drawing.SystemColors.Desktop;
             this.Name = "EditForm";
-            this.Text = "EditForm";
+            this.Text = "Edit Record";
             this.grpInputData.ResumeLayout(false);
             this.grpInputData.PerformLayout();
             this.ResumeLayout(false);

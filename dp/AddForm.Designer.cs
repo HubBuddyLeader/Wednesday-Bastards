@@ -157,7 +157,7 @@
             this.Controls.Add(this.lblTitle);
             this.Controls.Add(this.grpInputData);
             this.Name = "AddForm";
-            this.Text = "name";
+            this.Text = "Add Record";
             this.grpInputData.ResumeLayout(false);
             this.grpInputData.PerformLayout();
             this.ResumeLayout(false);

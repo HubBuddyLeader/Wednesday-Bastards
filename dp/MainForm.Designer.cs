@@ -209,9 +209,9 @@
             this.lblEdit.BackColor = System.Drawing.Color.White;
             this.lblEdit.Location = new System.Drawing.Point(726, 734);
             this.lblEdit.Name = "lblEdit";
-            this.lblEdit.Size = new System.Drawing.Size(182, 25);
+            this.lblEdit.Size = new System.Drawing.Size(192, 25);
             this.lblEdit.TabIndex = 18;
-            this.lblEdit.Text = "Please Exit Twice";
+            this.lblEdit.Text = "Please EXIT Twice";
             // 
             // fm_Database
             // 
