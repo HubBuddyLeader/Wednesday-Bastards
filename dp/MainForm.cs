@@ -41,7 +41,7 @@ namespace dp
 
         private void lblExit_Click(object sender, EventArgs e)
         {
-            Close();
+            this.Close();
         }
     }
 }

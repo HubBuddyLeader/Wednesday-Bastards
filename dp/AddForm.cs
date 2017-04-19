@@ -12,8 +12,6 @@ namespace dp
 {
     public partial class AddForm : Form
     {
-        Form secondForm = new Form();
-
         public AddForm()
         {
             InitializeComponent();
@@ -21,7 +19,7 @@ namespace dp
 
         private void lblBack_Click(object sender, EventArgs e)
         {
-            secondForm.Show();
+            this.Close();
         }
     }
 }

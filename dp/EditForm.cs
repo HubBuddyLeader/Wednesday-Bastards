@@ -21,5 +21,15 @@ namespace dp
         {
 
         }
+
+        private void lblBack_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void grpInputData_Enter(object sender, EventArgs e)
+        {
+
+        }
     }
 }
