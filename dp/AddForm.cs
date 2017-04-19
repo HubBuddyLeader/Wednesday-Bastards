@@ -49,16 +49,6 @@ namespace dp
 
         private void btnUpdate_Click(object sender, EventArgs e)
         {
-
-        }
-
-        private void txtStock_TextChanged(object sender, EventArgs e)
-        {
-           
-        }
-
-        private void btnUpload_Click(object sender, EventArgs e)
-        {
             //Validation
             this.errorLabel.Text = "Error : \n";
 
@@ -85,14 +75,23 @@ namespace dp
                 //add item to dataBase
                 Database.Data.Add(new Item(_name, _stock, _price, _id));
                 _id++;
+                this.errorLabel.Text = "FUCK! IT WORKED!" + Database.Data[0].Name; //+ Database.Data[1].Name;
+                this.errorLabel.Show();
             }
             else {
                 //Display error then clear
                 this.errorLabel.Text += _validate;
                 this.errorLabel.Show();
                 _validate = "";
-                
+
             }
         }
+
+        private void txtStock_TextChanged(object sender, EventArgs e)
+        {
+           
+        }
+
+        
     }
 }

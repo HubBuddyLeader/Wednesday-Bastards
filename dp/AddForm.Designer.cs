@@ -158,7 +158,7 @@
             this.btnUpdate.TabIndex = 0;
             this.btnUpdate.Text = "Upload";
             this.btnUpdate.UseVisualStyleBackColor = true;
-            this.btnUpdate.Click += new System.EventHandler(this.btnUpload_Click);
+          //  this.btnUpdate.Click += new System.EventHandler(this.btnUpload_Click);
             // 
             // lblTitle
             // 
