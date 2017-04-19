@@ -15,8 +15,6 @@ namespace dp
         [STAThread]
         static void Main()
         {
-            List<Item> items = new List<Item>();
-            addForm addItem = new addForm();
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             //show me the magic

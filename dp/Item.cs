@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace dp
 {
-    class Item
+    public class Item
     {
         private int _stock, _id;
         private string _name;
