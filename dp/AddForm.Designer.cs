@@ -140,15 +140,15 @@
 
             // btnUpload
             // 
-            this.btnUpload.ForeColor = System.Drawing.Color.Black;
-            this.btnUpload.Location = new System.Drawing.Point(437, 489);
-            this.btnUpload.Margin = new System.Windows.Forms.Padding(4);
-            this.btnUpload.Name = "btnUpload";
-            this.btnUpload.Size = new System.Drawing.Size(288, 58);
-            this.btnUpload.TabIndex = 0;
-            this.btnUpload.Text = "Upload";
-            this.btnUpload.UseVisualStyleBackColor = true;
-            this.btnUpload.Click += new System.EventHandler(this.btnUpload_Click);
+            this.btnUpdate.ForeColor = System.Drawing.Color.Black;
+            this.btnUpdate.Location = new System.Drawing.Point(437, 489);
+            this.btnUpdate.Margin = new System.Windows.Forms.Padding(4);
+            this.btnUpdate.Name = "btnUpload";
+            this.btnUpdate.Size = new System.Drawing.Size(288, 58);
+            this.btnUpdate.TabIndex = 0;
+            this.btnUpdate.Text = "Upload";
+            this.btnUpdate.UseVisualStyleBackColor = true;
+            this.btnUpdate.Click += new System.EventHandler(this.btnUpload_Click);
             // 
             // lblTitle
             // 
@@ -156,10 +156,9 @@
             this.lblTitle.Font = new System.Drawing.Font("Microsoft Sans Serif", 22.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTitle.ForeColor = System.Drawing.Color.Red;
             this.lblTitle.Location = new System.Drawing.Point(12, 52);
-<<<<<<< HEAD
+
             this.lblTitle.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-=======
->>>>>>> d3f6ae251d9062a492c51db1e0846a9958fd9b71
+
             this.lblTitle.Name = "lblTitle";
             this.lblTitle.Size = new System.Drawing.Size(353, 67);
             this.lblTitle.TabIndex = 7;
@@ -167,17 +166,16 @@
             // 
             // lblClose
             // 
-<<<<<<< HEAD
-=======
+
             this.lblClose.BackColor = System.Drawing.Color.White;
->>>>>>> d3f6ae251d9062a492c51db1e0846a9958fd9b71
+
             this.lblClose.ForeColor = System.Drawing.Color.Black;
             this.lblClose.Location = new System.Drawing.Point(1135, 862);
             this.lblClose.Name = "lblClose";
             this.lblClose.Size = new System.Drawing.Size(216, 47);
             this.lblClose.TabIndex = 16;
             this.lblClose.Text = "Close";
-<<<<<<< HEAD
+
             this.lblClose.UseVisualStyleBackColor = true;
             this.lblClose.Click += new System.EventHandler(this.lblBack_Click);
             // 
@@ -193,7 +191,7 @@
             this.errorLabel.Text = "Error:";
             this.errorLabel.Visible = false;
             this.errorLabel.Click += new System.EventHandler(this.errorLabel_Click);
-=======
+
             this.lblClose.UseVisualStyleBackColor = false;
             this.lblClose.Click += new System.EventHandler(this.lblClose_Click);
             // 
@@ -208,26 +206,26 @@
             this.btnUpdate.Text = "Insert";
             this.btnUpdate.UseVisualStyleBackColor = false;
             this.btnUpdate.Click += new System.EventHandler(this.btnUpdate_Click);
->>>>>>> d3f6ae251d9062a492c51db1e0846a9958fd9b71
+
             // 
             // AddForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Black;
-<<<<<<< HEAD
+
             this.ClientSize = new System.Drawing.Size(1363, 921);
             this.Controls.Add(this.errorLabel);
             this.Controls.Add(this.lblClose);
             this.Controls.Add(this.lblTitle);
             this.Controls.Add(this.grpInputData);
             this.Margin = new System.Windows.Forms.Padding(4);
-=======
+
             this.ClientSize = new System.Drawing.Size(1170, 782);
             this.Controls.Add(this.lblClose);
             this.Controls.Add(this.lblTitle);
             this.Controls.Add(this.grpInputData);
->>>>>>> d3f6ae251d9062a492c51db1e0846a9958fd9b71
+
             this.Name = "AddForm";
             this.Text = "Add Record";
             this.grpInputData.ResumeLayout(false);
