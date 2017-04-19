@@ -35,28 +35,36 @@
             this.txtProduct = new System.Windows.Forms.TextBox();
             this.txtStock = new System.Windows.Forms.TextBox();
             this.txtPrice = new System.Windows.Forms.TextBox();
-            this.btnUpload = new System.Windows.Forms.Button();
             this.lblTitle = new System.Windows.Forms.Label();
             this.lblClose = new System.Windows.Forms.Button();
+
             this.errorLabel = new System.Windows.Forms.Label();
+
+            this.btnUpdate = new System.Windows.Forms.Button();
+
             this.grpInputData.SuspendLayout();
             this.SuspendLayout();
             // 
             // grpInputData
             // 
+            this.grpInputData.Controls.Add(this.btnUpdate);
             this.grpInputData.Controls.Add(this.lblStock);
             this.grpInputData.Controls.Add(this.lblPrice);
             this.grpInputData.Controls.Add(this.lblProduct);
             this.grpInputData.Controls.Add(this.txtProduct);
             this.grpInputData.Controls.Add(this.txtStock);
             this.grpInputData.Controls.Add(this.txtPrice);
-            this.grpInputData.Controls.Add(this.btnUpload);
             this.grpInputData.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.grpInputData.Location = new System.Drawing.Point(314, 166);
+
             this.grpInputData.Margin = new System.Windows.Forms.Padding(4);
             this.grpInputData.Name = "grpInputData";
             this.grpInputData.Padding = new System.Windows.Forms.Padding(4);
             this.grpInputData.Size = new System.Drawing.Size(733, 554);
+
+            this.grpInputData.Name = "grpInputData";
+            this.grpInputData.Size = new System.Drawing.Size(550, 447);
+
             this.grpInputData.TabIndex = 6;
             this.grpInputData.TabStop = false;
             this.grpInputData.Text = "Input Data";
@@ -65,10 +73,9 @@
             // 
             this.lblStock.AutoSize = true;
             this.lblStock.ForeColor = System.Drawing.Color.Aqua;
-            this.lblStock.Location = new System.Drawing.Point(81, 371);
-            this.lblStock.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblStock.Location = new System.Drawing.Point(61, 299);
             this.lblStock.Name = "lblStock";
-            this.lblStock.Size = new System.Drawing.Size(94, 32);
+            this.lblStock.Size = new System.Drawing.Size(72, 25);
             this.lblStock.TabIndex = 7;
             this.lblStock.Text = "Stock:";
             // 
@@ -76,10 +83,9 @@
             // 
             this.lblPrice.AutoSize = true;
             this.lblPrice.ForeColor = System.Drawing.Color.Aqua;
-            this.lblPrice.Location = new System.Drawing.Point(81, 239);
-            this.lblPrice.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblPrice.Location = new System.Drawing.Point(61, 193);
             this.lblPrice.Name = "lblPrice";
-            this.lblPrice.Size = new System.Drawing.Size(88, 32);
+            this.lblPrice.Size = new System.Drawing.Size(67, 25);
             this.lblPrice.TabIndex = 6;
             this.lblPrice.Text = "Price:";
             // 
@@ -87,40 +93,51 @@
             // 
             this.lblProduct.AutoSize = true;
             this.lblProduct.ForeColor = System.Drawing.Color.Aqua;
-            this.lblProduct.Location = new System.Drawing.Point(81, 117);
-            this.lblProduct.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblProduct.Location = new System.Drawing.Point(61, 94);
             this.lblProduct.Name = "lblProduct";
-            this.lblProduct.Size = new System.Drawing.Size(121, 32);
+            this.lblProduct.Size = new System.Drawing.Size(92, 25);
             this.lblProduct.TabIndex = 5;
             this.lblProduct.Text = "Product:";
             // 
             // txtProduct
             // 
+
             this.txtProduct.Location = new System.Drawing.Point(251, 113);
             this.txtProduct.Margin = new System.Windows.Forms.Padding(4);
+
+            this.txtProduct.Location = new System.Drawing.Point(188, 91);
+
             this.txtProduct.Name = "txtProduct";
-            this.txtProduct.Size = new System.Drawing.Size(369, 38);
+            this.txtProduct.Size = new System.Drawing.Size(278, 31);
             this.txtProduct.TabIndex = 2;
             this.txtProduct.TextChanged += new System.EventHandler(this.txtProduct_TextChanged);
             // 
             // txtStock
             // 
+
             this.txtStock.Location = new System.Drawing.Point(251, 367);
             this.txtStock.Margin = new System.Windows.Forms.Padding(4);
+
+            this.txtStock.Location = new System.Drawing.Point(188, 296);
+
             this.txtStock.Name = "txtStock";
-            this.txtStock.Size = new System.Drawing.Size(369, 38);
+            this.txtStock.Size = new System.Drawing.Size(278, 31);
             this.txtStock.TabIndex = 4;
             this.txtStock.TextChanged += new System.EventHandler(this.txtStock_TextChanged);
             // 
             // txtPrice
             // 
+
             this.txtPrice.Location = new System.Drawing.Point(251, 236);
             this.txtPrice.Margin = new System.Windows.Forms.Padding(4);
+
+            this.txtPrice.Location = new System.Drawing.Point(188, 190);
             this.txtPrice.Name = "txtPrice";
-            this.txtPrice.Size = new System.Drawing.Size(369, 38);
+            this.txtPrice.Size = new System.Drawing.Size(278, 31);
             this.txtPrice.TabIndex = 3;
             this.txtPrice.TextChanged += new System.EventHandler(this.txtPrice_TextChanged);
             // 
+
             // btnUpload
             // 
             this.btnUpload.ForeColor = System.Drawing.Color.Black;
@@ -139,20 +156,28 @@
             this.lblTitle.Font = new System.Drawing.Font("Microsoft Sans Serif", 22.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTitle.ForeColor = System.Drawing.Color.Red;
             this.lblTitle.Location = new System.Drawing.Point(12, 52);
+<<<<<<< HEAD
             this.lblTitle.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+=======
+>>>>>>> d3f6ae251d9062a492c51db1e0846a9958fd9b71
             this.lblTitle.Name = "lblTitle";
-            this.lblTitle.Size = new System.Drawing.Size(442, 85);
+            this.lblTitle.Size = new System.Drawing.Size(353, 67);
             this.lblTitle.TabIndex = 7;
             this.lblTitle.Text = "PhP-SRePS";
             // 
             // lblClose
             // 
+<<<<<<< HEAD
+=======
+            this.lblClose.BackColor = System.Drawing.Color.White;
+>>>>>>> d3f6ae251d9062a492c51db1e0846a9958fd9b71
             this.lblClose.ForeColor = System.Drawing.Color.Black;
             this.lblClose.Location = new System.Drawing.Point(1135, 862);
             this.lblClose.Name = "lblClose";
             this.lblClose.Size = new System.Drawing.Size(216, 47);
-            this.lblClose.TabIndex = 8;
+            this.lblClose.TabIndex = 16;
             this.lblClose.Text = "Close";
+<<<<<<< HEAD
             this.lblClose.UseVisualStyleBackColor = true;
             this.lblClose.Click += new System.EventHandler(this.lblBack_Click);
             // 
@@ -168,20 +193,43 @@
             this.errorLabel.Text = "Error:";
             this.errorLabel.Visible = false;
             this.errorLabel.Click += new System.EventHandler(this.errorLabel_Click);
+=======
+            this.lblClose.UseVisualStyleBackColor = false;
+            this.lblClose.Click += new System.EventHandler(this.lblClose_Click);
+            // 
+            // btnUpdate
+            // 
+            this.btnUpdate.BackColor = System.Drawing.Color.White;
+            this.btnUpdate.ForeColor = System.Drawing.Color.Black;
+            this.btnUpdate.Location = new System.Drawing.Point(328, 394);
+            this.btnUpdate.Name = "btnUpdate";
+            this.btnUpdate.Size = new System.Drawing.Size(216, 47);
+            this.btnUpdate.TabIndex = 17;
+            this.btnUpdate.Text = "Insert";
+            this.btnUpdate.UseVisualStyleBackColor = false;
+            this.btnUpdate.Click += new System.EventHandler(this.btnUpdate_Click);
+>>>>>>> d3f6ae251d9062a492c51db1e0846a9958fd9b71
             // 
             // AddForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(16F, 31F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Black;
+<<<<<<< HEAD
             this.ClientSize = new System.Drawing.Size(1363, 921);
             this.Controls.Add(this.errorLabel);
             this.Controls.Add(this.lblClose);
             this.Controls.Add(this.lblTitle);
             this.Controls.Add(this.grpInputData);
             this.Margin = new System.Windows.Forms.Padding(4);
+=======
+            this.ClientSize = new System.Drawing.Size(1170, 782);
+            this.Controls.Add(this.lblClose);
+            this.Controls.Add(this.lblTitle);
+            this.Controls.Add(this.grpInputData);
+>>>>>>> d3f6ae251d9062a492c51db1e0846a9958fd9b71
             this.Name = "AddForm";
-            this.Text = "name";
+            this.Text = "Add Record";
             this.grpInputData.ResumeLayout(false);
             this.grpInputData.PerformLayout();
             this.ResumeLayout(false);
@@ -198,9 +246,11 @@
         private System.Windows.Forms.TextBox txtProduct;
         private System.Windows.Forms.TextBox txtStock;
         private System.Windows.Forms.TextBox txtPrice;
-        private System.Windows.Forms.Button btnUpload;
         private System.Windows.Forms.Label lblTitle;
         private System.Windows.Forms.Button lblClose;
+
         private System.Windows.Forms.Label errorLabel;
+
+        private System.Windows.Forms.Button btnUpdate;
     }
 }

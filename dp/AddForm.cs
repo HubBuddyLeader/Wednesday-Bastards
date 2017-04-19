@@ -42,6 +42,16 @@ namespace dp
 
         }
 
+        private void lblClose_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void btnUpdate_Click(object sender, EventArgs e)
+        {
+
+        }
+
         private void txtStock_TextChanged(object sender, EventArgs e)
         {
            

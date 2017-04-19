@@ -221,9 +221,13 @@
             this.lblEdit.Location = new System.Drawing.Point(968, 910);
             this.lblEdit.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblEdit.Name = "lblEdit";
+<<<<<<< HEAD
             this.lblEdit.Size = new System.Drawing.Size(239, 32);
+=======
+            this.lblEdit.Size = new System.Drawing.Size(192, 25);
+>>>>>>> d3f6ae251d9062a492c51db1e0846a9958fd9b71
             this.lblEdit.TabIndex = 18;
-            this.lblEdit.Text = "Please Exit Twice";
+            this.lblEdit.Text = "Please EXIT Twice";
             // 
             // fm_Database
             // 
