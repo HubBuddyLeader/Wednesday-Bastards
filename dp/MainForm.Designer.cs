@@ -74,6 +74,9 @@
             // 
             // lbProduct
             // 
+            this.lbProduct.BackColor = System.Drawing.Color.DimGray;
+            this.lbProduct.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.lbProduct.ForeColor = System.Drawing.Color.LawnGreen;
             this.lbProduct.FormattingEnabled = true;
             this.lbProduct.ItemHeight = 25;
             this.lbProduct.Items.AddRange(new object[] {
@@ -83,12 +86,15 @@
             "Product 4"});
             this.lbProduct.Location = new System.Drawing.Point(535, 286);
             this.lbProduct.Name = "lbProduct";
-            this.lbProduct.Size = new System.Drawing.Size(169, 379);
+            this.lbProduct.Size = new System.Drawing.Size(169, 375);
             this.lbProduct.TabIndex = 7;
             this.lbProduct.SelectedIndexChanged += new System.EventHandler(this.lbProduct_SelectedIndexChanged);
             // 
             // lbPrice
             // 
+            this.lbPrice.BackColor = System.Drawing.Color.DimGray;
+            this.lbPrice.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.lbPrice.ForeColor = System.Drawing.Color.LawnGreen;
             this.lbPrice.FormattingEnabled = true;
             this.lbPrice.ItemHeight = 25;
             this.lbPrice.Items.AddRange(new object[] {
@@ -98,11 +104,14 @@
             "Price 4"});
             this.lbPrice.Location = new System.Drawing.Point(739, 286);
             this.lbPrice.Name = "lbPrice";
-            this.lbPrice.Size = new System.Drawing.Size(169, 379);
+            this.lbPrice.Size = new System.Drawing.Size(169, 375);
             this.lbPrice.TabIndex = 8;
             // 
             // lbStock
             // 
+            this.lbStock.BackColor = System.Drawing.Color.DimGray;
+            this.lbStock.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.lbStock.ForeColor = System.Drawing.Color.LawnGreen;
             this.lbStock.FormattingEnabled = true;
             this.lbStock.ItemHeight = 25;
             this.lbStock.Items.AddRange(new object[] {
@@ -112,7 +121,7 @@
             "Stock 4"});
             this.lbStock.Location = new System.Drawing.Point(942, 286);
             this.lbStock.Name = "lbStock";
-            this.lbStock.Size = new System.Drawing.Size(169, 379);
+            this.lbStock.Size = new System.Drawing.Size(169, 375);
             this.lbStock.TabIndex = 9;
             // 
             // lblProducts
