@@ -47,6 +47,16 @@ namespace dp
             //Price input
         }
 
+        private void lblClose_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void btnUpdate_Click(object sender, EventArgs e)
+        {
+
+        }
+
         private void txtStock_TextChanged(object sender, EventArgs e)
         {
             if (!int.TryParse(this.txtPrice.Text, out _stock)){
