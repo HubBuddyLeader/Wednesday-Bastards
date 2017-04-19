@@ -19,7 +19,10 @@ namespace dp
 
         private void editRecordToolStripMenuItem_Click(object sender, EventArgs e)
         {
-
+			for (int i = 0; i < Database.Data.Count; i++)
+			{
+				comboBox1.Items.Add(Database.Data[i].Name);
+			}
         }
 
         private void lblBack_Click(object sender, EventArgs e)
@@ -41,12 +44,23 @@ namespace dp
             
         }
 
-        private void EditForm_Load(object sender, EventArgs e)
+        private void EditForm_Load_1(object sender, EventArgs e)
         {
-            for (int i = 0; i < Database.Data.Count - 1; i++)
+            lblProduct.Text = "FUCK ITS LOADING";
+            for (int i = 0; i < Database.Data.Count; i++)
             {
                 comboBox1.Items.Add(Database.Data[i].Name);
             }
+        }
+
+        private void comboBox1_SelectedIndexChanged_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lblProduct_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

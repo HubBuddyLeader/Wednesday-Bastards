@@ -49,6 +49,26 @@ namespace dp
 
         private void btnUpdate_Click(object sender, EventArgs e)
         {
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtStock_TextChanged(object sender, EventArgs e)
+        {
+           
+        }
+
+        private void btnInsert_Click(object sender, EventArgs e)
+        {
             //Validation
             this.errorLabel.Text = "Error : \n";
 
@@ -85,11 +105,6 @@ namespace dp
                 _validate = "";
 
             }
-        }
-
-        private void txtStock_TextChanged(object sender, EventArgs e)
-        {
-           
         }
 
         
