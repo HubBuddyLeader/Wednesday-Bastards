@@ -12,6 +12,7 @@ namespace dp
 {
     public partial class fm_Database : Form
     {
+
         AddForm addForm = new AddForm();
         EditForm editForm = new EditForm();
 
@@ -54,5 +55,12 @@ namespace dp
         {
 
         }
+
+        private void lblProducts_Click(object sender, EventArgs e)
+        {
+
+        }
+
+
     }
 }

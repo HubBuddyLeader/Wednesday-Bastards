@@ -12,9 +12,23 @@ namespace dp
 {
     public partial class EditForm : Form
     {
-        public EditForm()
-        {
-            InitializeComponent();
+		public EditForm()
+		{
+			InitializeComponent();
+			string[] employees = new string[]{"Hamilton, David", "Hensien, Kari",
+			"Hammond, Maria", "Harris, Keith", "Henshaw, Jeff D.",
+			"Hanson, Mark", "Harnpadoungsataya, Sariya",
+			"Harrington, Mark", "Harris, Keith", "Hartwig, Doris",
+			"Harui, Roger", "Hassall, Mark", "Hasselberg, Jonas",
+			"Harnpadoungsataya, Sariya", "Henshaw, Jeff D.",
+			"Henshaw, Jeff D.", "Hensien, Kari", "Harris, Keith",
+			"Henshaw, Jeff D.", "Hensien, Kari", "Hasselberg, Jonas",
+			"Harrington, Mark", "Hedlund, Magnus", "Hay, Jeff",
+			"Heidepriem, Brandon D."};
+			for (int i = 0; i < employees.Length;i++)
+			{
+				comboBox1.Items.Add(employees[i]);
+			}
         }
 
         private void editRecordToolStripMenuItem_Click(object sender, EventArgs e)
