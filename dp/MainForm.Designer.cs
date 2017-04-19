@@ -190,13 +190,17 @@
             // 
             // lblExit
             // 
+            this.lblExit.BackColor = System.Drawing.Color.White;
+            this.lblExit.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.lblExit.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DimGray;
+            this.lblExit.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.lblExit.ForeColor = System.Drawing.Color.Black;
             this.lblExit.Location = new System.Drawing.Point(942, 723);
             this.lblExit.Name = "lblExit";
             this.lblExit.Size = new System.Drawing.Size(216, 47);
             this.lblExit.TabIndex = 14;
             this.lblExit.Text = "Exit";
-            this.lblExit.UseVisualStyleBackColor = true;
+            this.lblExit.UseVisualStyleBackColor = false;
             this.lblExit.Click += new System.EventHandler(this.lblExit_Click);
             // 
             // lblEdit
