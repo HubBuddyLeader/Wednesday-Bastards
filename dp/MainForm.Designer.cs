@@ -42,6 +42,7 @@
             this.addRecordToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.editRecordToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.lblExit = new System.Windows.Forms.Button();
+            this.lblEdit = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pbShitImage)).BeginInit();
             this.msNav.SuspendLayout();
             this.SuspendLayout();
@@ -66,6 +67,7 @@
             this.pbShitImage.Location = new System.Drawing.Point(24, 195);
             this.pbShitImage.Name = "pbShitImage";
             this.pbShitImage.Size = new System.Drawing.Size(449, 470);
+            this.pbShitImage.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pbShitImage.TabIndex = 6;
             this.pbShitImage.TabStop = false;
             this.pbShitImage.Click += new System.EventHandler(this.pbShitImage_Click);
@@ -160,7 +162,7 @@
             this.addRecordToolStripMenuItem,
             this.editRecordToolStripMenuItem});
             this.navigateToolStripMenuItem.Name = "navigateToolStripMenuItem";
-            this.navigateToolStripMenuItem.Size = new System.Drawing.Size(122, 38);
+            this.navigateToolStripMenuItem.Size = new System.Drawing.Size(122, 36);
             this.navigateToolStripMenuItem.Text = "Navigate";
             // 
             // addRecordToolStripMenuItem
@@ -175,6 +177,7 @@
             this.editRecordToolStripMenuItem.Name = "editRecordToolStripMenuItem";
             this.editRecordToolStripMenuItem.Size = new System.Drawing.Size(269, 38);
             this.editRecordToolStripMenuItem.Text = "Edit Record";
+            this.editRecordToolStripMenuItem.Click += new System.EventHandler(this.editRecordToolStripMenuItem_Click);
             // 
             // lblExit
             // 
@@ -187,12 +190,23 @@
             this.lblExit.UseVisualStyleBackColor = true;
             this.lblExit.Click += new System.EventHandler(this.lblExit_Click);
             // 
+            // lblEdit
+            // 
+            this.lblEdit.AutoSize = true;
+            this.lblEdit.BackColor = System.Drawing.Color.White;
+            this.lblEdit.Location = new System.Drawing.Point(726, 734);
+            this.lblEdit.Name = "lblEdit";
+            this.lblEdit.Size = new System.Drawing.Size(182, 25);
+            this.lblEdit.TabIndex = 18;
+            this.lblEdit.Text = "Please Exit Twice";
+            // 
             // fm_Database
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Black;
             this.ClientSize = new System.Drawing.Size(1170, 782);
+            this.Controls.Add(this.lblEdit);
             this.Controls.Add(this.lblExit);
             this.Controls.Add(this.lblStocks);
             this.Controls.Add(this.lblPrices);
@@ -206,6 +220,7 @@
             this.MainMenuStrip = this.msNav;
             this.Name = "fm_Database";
             this.Text = "PhP-SRePS";
+            this.Load += new System.EventHandler(this.fm_Database_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pbShitImage)).EndInit();
             this.msNav.ResumeLayout(false);
             this.msNav.PerformLayout();
@@ -228,6 +243,7 @@
         private System.Windows.Forms.ToolStripMenuItem addRecordToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem editRecordToolStripMenuItem;
         private System.Windows.Forms.Button lblExit;
+        private System.Windows.Forms.Label lblEdit;
     }
 }
 
