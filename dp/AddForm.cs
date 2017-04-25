@@ -29,17 +29,17 @@ namespace dp
 
         private void txtProduct_TextChanged(object sender, EventArgs e)
         {
-        
+            // do nothing...
         }
 
         private void txtPrice_TextChanged(object sender, EventArgs e)
         {
-            
+            // do nothing...
         }
 
         private void errorLabel_Click(object sender, EventArgs e)
         {
-
+            // do nothing...
         }
 
         private void lblClose_Click(object sender, EventArgs e)
@@ -49,12 +49,12 @@ namespace dp
 
         private void btnUpdate_Click(object sender, EventArgs e)
         {
-			
+			// do nothing...
         }
 
         private void txtStock_TextChanged(object sender, EventArgs e)
         {
-           
+           // do nothing...
         }
 
         private void btnUpload_Click(object sender, EventArgs e)
