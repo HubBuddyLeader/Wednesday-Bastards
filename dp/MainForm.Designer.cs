@@ -32,8 +32,6 @@
             this.lblTitle = new System.Windows.Forms.Label();
             this.pbShitImage = new System.Windows.Forms.PictureBox();
             this.lbProduct = new System.Windows.Forms.ListBox();
-            this.lbPrice = new System.Windows.Forms.ListBox();
-            this.lbStock = new System.Windows.Forms.ListBox();
             this.lblProducts = new System.Windows.Forms.Label();
             this.lblPrices = new System.Windows.Forms.Label();
             this.lblStocks = new System.Windows.Forms.Label();
@@ -43,6 +41,8 @@
             this.editRecordToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.lblExit = new System.Windows.Forms.Button();
             this.lblEdit = new System.Windows.Forms.Label();
+            this.lbStock = new System.Windows.Forms.ListBox();
+            this.lbPrice = new System.Windows.Forms.ListBox();
             ((System.ComponentModel.ISupportInitialize)(this.pbShitImage)).BeginInit();
             this.msNav.SuspendLayout();
             this.SuspendLayout();
@@ -66,7 +66,7 @@
             this.pbShitImage.Image = ((System.Drawing.Image)(resources.GetObject("pbShitImage.Image")));
             this.pbShitImage.InitialImage = ((System.Drawing.Image)(resources.GetObject("pbShitImage.InitialImage")));
             this.pbShitImage.Location = new System.Drawing.Point(32, 242);
-            this.pbShitImage.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pbShitImage.Margin = new System.Windows.Forms.Padding(4);
             this.pbShitImage.Name = "pbShitImage";
             this.pbShitImage.Size = new System.Drawing.Size(599, 583);
             this.pbShitImage.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -81,53 +81,12 @@
             this.lbProduct.ForeColor = System.Drawing.Color.LawnGreen;
             this.lbProduct.FormattingEnabled = true;
             this.lbProduct.ItemHeight = 31;
-            this.lbProduct.Items.AddRange(new object[] {
-            "Product 1",
-            "Product 2",
-            "Product 3",
-            "Product 4"});
             this.lbProduct.Location = new System.Drawing.Point(713, 355);
-            this.lbProduct.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.lbProduct.Margin = new System.Windows.Forms.Padding(4);
             this.lbProduct.Name = "lbProduct";
             this.lbProduct.Size = new System.Drawing.Size(225, 465);
             this.lbProduct.TabIndex = 7;
             this.lbProduct.SelectedIndexChanged += new System.EventHandler(this.lbProduct_SelectedIndexChanged);
-            // 
-            // lbPrice
-            // 
-            this.lbPrice.BackColor = System.Drawing.Color.DimGray;
-            this.lbPrice.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.lbPrice.ForeColor = System.Drawing.Color.LawnGreen;
-            this.lbPrice.FormattingEnabled = true;
-            this.lbPrice.ItemHeight = 31;
-            this.lbPrice.Items.AddRange(new object[] {
-            "Price 1",
-            "Price 2",
-            "Price 3",
-            "Price 4"});
-            this.lbPrice.Location = new System.Drawing.Point(985, 355);
-            this.lbPrice.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.lbPrice.Name = "lbPrice";
-            this.lbPrice.Size = new System.Drawing.Size(225, 465);
-            this.lbPrice.TabIndex = 8;
-            // 
-            // lbStock
-            // 
-            this.lbStock.BackColor = System.Drawing.Color.DimGray;
-            this.lbStock.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.lbStock.ForeColor = System.Drawing.Color.LawnGreen;
-            this.lbStock.FormattingEnabled = true;
-            this.lbStock.ItemHeight = 31;
-            this.lbStock.Items.AddRange(new object[] {
-            "Stock 1",
-            "Stock 2",
-            "Stock 3",
-            "Stock 4"});
-            this.lbStock.Location = new System.Drawing.Point(1256, 355);
-            this.lbStock.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.lbStock.Name = "lbStock";
-            this.lbStock.Size = new System.Drawing.Size(225, 465);
-            this.lbStock.TabIndex = 9;
             // 
             // lblProducts
             // 
@@ -206,7 +165,7 @@
             this.lblExit.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.lblExit.ForeColor = System.Drawing.Color.Black;
             this.lblExit.Location = new System.Drawing.Point(1256, 897);
-            this.lblExit.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.lblExit.Margin = new System.Windows.Forms.Padding(4);
             this.lblExit.Name = "lblExit";
             this.lblExit.Size = new System.Drawing.Size(288, 58);
             this.lblExit.TabIndex = 14;
@@ -220,12 +179,36 @@
             this.lblEdit.BackColor = System.Drawing.Color.White;
             this.lblEdit.Location = new System.Drawing.Point(968, 910);
             this.lblEdit.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-
-            this.lblEdit.Size = new System.Drawing.Size(239, 32);
-            this.lblEdit.Size = new System.Drawing.Size(192, 25);
-
+            this.lblEdit.Name = "lblEdit";
+            this.lblEdit.Size = new System.Drawing.Size(253, 32);
             this.lblEdit.TabIndex = 18;
             this.lblEdit.Text = "Please EXIT Twice";
+            // 
+            // lbStock
+            // 
+            this.lbStock.BackColor = System.Drawing.Color.DimGray;
+            this.lbStock.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.lbStock.ForeColor = System.Drawing.Color.LawnGreen;
+            this.lbStock.FormattingEnabled = true;
+            this.lbStock.ItemHeight = 31;
+            this.lbStock.Location = new System.Drawing.Point(1256, 355);
+            this.lbStock.Margin = new System.Windows.Forms.Padding(4);
+            this.lbStock.Name = "lbStock";
+            this.lbStock.Size = new System.Drawing.Size(225, 465);
+            this.lbStock.TabIndex = 9;
+            // 
+            // lbPrice
+            // 
+            this.lbPrice.BackColor = System.Drawing.Color.DimGray;
+            this.lbPrice.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.lbPrice.ForeColor = System.Drawing.Color.LawnGreen;
+            this.lbPrice.FormattingEnabled = true;
+            this.lbPrice.ItemHeight = 31;
+            this.lbPrice.Location = new System.Drawing.Point(985, 355);
+            this.lbPrice.Margin = new System.Windows.Forms.Padding(4);
+            this.lbPrice.Name = "lbPrice";
+            this.lbPrice.Size = new System.Drawing.Size(225, 465);
+            this.lbPrice.TabIndex = 8;
             // 
             // fm_Database
             // 
@@ -245,7 +228,7 @@
             this.Controls.Add(this.lblTitle);
             this.Controls.Add(this.msNav);
             this.MainMenuStrip = this.msNav;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "fm_Database";
             this.Text = "PhP-SRePS";
             this.Load += new System.EventHandler(this.fm_Database_Load);
@@ -260,9 +243,6 @@
         #endregion
         private System.Windows.Forms.Label lblTitle;
         private System.Windows.Forms.PictureBox pbShitImage;
-        private System.Windows.Forms.ListBox lbProduct;
-        private System.Windows.Forms.ListBox lbPrice;
-        private System.Windows.Forms.ListBox lbStock;
         private System.Windows.Forms.Label lblProducts;
         private System.Windows.Forms.Label lblPrices;
         private System.Windows.Forms.Label lblStocks;
@@ -272,6 +252,9 @@
         private System.Windows.Forms.ToolStripMenuItem editRecordToolStripMenuItem;
         private System.Windows.Forms.Button lblExit;
         private System.Windows.Forms.Label lblEdit;
+        private System.Windows.Forms.ListBox lbStock;
+        private System.Windows.Forms.ListBox lbPrice;
+        private System.Windows.Forms.ListBox lbProduct;
     }
 }
 

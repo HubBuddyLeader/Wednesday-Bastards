@@ -53,7 +53,18 @@ namespace dp
 
         private void fm_Database_Load(object sender, EventArgs e)
         {
+            Database.Data.Add(new Item("item1", 4, 5, 0));
+            Database.Data.Add(new Item("data2", 43, 52, 1));
+            Database.Data.Add(new Item("item3", 4, 5, 0));
 
+           // lbProduct.Items.Add("NAME" + "  " + "Stock" + " " + "Price");
+            for (int i = 0; i < Database.Data.Count; i++)
+            {
+                lbProduct.Items.Add(Database.Data[i].Name);
+                lbPrice.Items.Add(Database.Data[i].Price.ToString());
+                lbStock.Items.Add(Database.Data[i].Stock.ToString());
+            }
+           
         }
 
         private void lblProducts_Click(object sender, EventArgs e)
