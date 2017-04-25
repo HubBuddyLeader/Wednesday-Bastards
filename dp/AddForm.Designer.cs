@@ -183,7 +183,7 @@
             this.btnInsert.TabIndex = 0;
             this.btnInsert.Text = "Upload";
             this.btnInsert.UseVisualStyleBackColor = true;
-            this.btnInsert.Click += new System.EventHandler(this.btnInsert_Click);
+            //this.btnInsert.Click += new System.EventHandler(this.btnInsert_Click);
             // 
             // button1
             // 
@@ -196,7 +196,7 @@
             this.button1.TabIndex = 17;
             this.button1.Text = "Close";
             this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            //this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // AddForm
             // 
