@@ -49,16 +49,6 @@ namespace dp
 
         private void btnUpdate_Click(object sender, EventArgs e)
         {
-			// do nothing...
-        }
-
-        private void txtStock_TextChanged(object sender, EventArgs e)
-        {
-           // do nothing...
-        }
-
-        private void btnUpload_Click(object sender, EventArgs e)
-        {
             //Validation
             this.errorLabel.Text = "Error : \n";
 
@@ -66,7 +56,8 @@ namespace dp
             {
                 _validate += "Product name must contain only alphebetical characters \n";
             }
-            else {
+            else
+            {
                 _name = this.txtProduct.Text;
             }
             if (!double.TryParse(this.txtPrice.Text, out _price))
@@ -86,13 +77,28 @@ namespace dp
                 Database.Data.Add(new Item(_name, _stock, _price, _id));
                 _id++;
             }
-            else {
+            else
+            {
                 //Display error then clear
                 this.errorLabel.Text += _validate;
                 this.errorLabel.Show();
                 _validate = "";
-                
             }
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+        }
+
+        private void txtStock_TextChanged(object sender, EventArgs e)
+        {
+           // do nothing...
+        }
+
+        private void btnUpload_Click(object sender, EventArgs e)
+        {
+            // do nothing...
         }
     }
 }
