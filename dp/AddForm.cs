@@ -24,22 +24,22 @@ namespace dp
 
         private void lblBack_Click(object sender, EventArgs e)
         {
-            this.Close();
+			this.Hide();
         }
 
         private void txtProduct_TextChanged(object sender, EventArgs e)
         {
-            // do nothing...
+        
         }
 
         private void txtPrice_TextChanged(object sender, EventArgs e)
         {
-            // do nothing...
+            
         }
 
         private void errorLabel_Click(object sender, EventArgs e)
         {
-            // do nothing...
+
         }
 
         private void lblClose_Click(object sender, EventArgs e)
@@ -49,6 +49,26 @@ namespace dp
 
         private void btnUpdate_Click(object sender, EventArgs e)
         {
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtStock_TextChanged(object sender, EventArgs e)
+        {
+           
+        }
+
+        private void btnInsert_Click(object sender, EventArgs e)
+        {
             //Validation
             this.errorLabel.Text = "Error : \n";
 
@@ -56,8 +76,7 @@ namespace dp
             {
                 _validate += "Product name must contain only alphebetical characters \n";
             }
-            else
-            {
+            else {
                 _name = this.txtProduct.Text;
             }
             if (!double.TryParse(this.txtPrice.Text, out _price))
@@ -76,29 +95,18 @@ namespace dp
                 //add item to dataBase
                 Database.Data.Add(new Item(_name, _stock, _price, _id));
                 _id++;
+                this.errorLabel.Text = "FUCK! IT WORKED!" + Database.Data[0].Name; //+ Database.Data[1].Name;
+                this.errorLabel.Show();
             }
-            else
-            {
+            else {
                 //Display error then clear
                 this.errorLabel.Text += _validate;
                 this.errorLabel.Show();
                 _validate = "";
+
             }
         }
 
-        private void button1_Click(object sender, EventArgs e)
-        {
-            this.Hide();
-        }
-
-        private void txtStock_TextChanged(object sender, EventArgs e)
-        {
-           // do nothing...
-        }
-
-        private void btnUpload_Click(object sender, EventArgs e)
-        {
-            // do nothing...
-        }
+        
     }
 }
