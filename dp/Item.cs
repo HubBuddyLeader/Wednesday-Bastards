@@ -23,6 +23,11 @@ namespace dp
             set {_stock = value;}
             get {return _stock;}  
         }
+        public int Id
+        {
+           // set { _id = value; }
+            get { return _id; }
+        }
         public string Name
         {
             set { _name = value; }

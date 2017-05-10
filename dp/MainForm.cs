@@ -17,12 +17,11 @@ namespace dp
             InitializeComponent();
 
 
-            Database.Data.Add(new dp.Item("shit", 2, 5, 0));
+            Database.Data.Add(new dp.Item("Ashit", 100, 5, 0));
+            Database.Data.Add(new dp.Item("Cfuck", 0, 7, 1));
+            Database.Data.Add(new dp.Item("Bshit2", 5, 18, 2));
 
-            foreach (Item product in Database.Data)
-            {
-                lblProduct.Items.Add(product.Name);
-            }
+            fillDisplay();
         }
 
         public void addToListBox()
@@ -45,10 +44,7 @@ namespace dp
             // Do nothing...
             lblProduct.Items.Clear();
 
-            foreach (Item product in Database.Data)
-            {
-                lblProduct.Items.Add(product.Name);
-            }
+            fillDisplay();
         }
 
         private void addRecordToolStripMenuItem_Click(object sender, EventArgs e)
@@ -76,6 +72,63 @@ namespace dp
         private void lblProducts_Click(object sender, EventArgs e)
         {
             // Do nothing...
+        }
+
+        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+          //  object selected = this.sortBox.SelectedItem;
+            switch (this.sortBox.SelectedIndex) {
+                case 0: //ID
+                    Database.Data.Sort(delegate(Item x, Item y) {
+                        return x.Id.CompareTo(y.Id);
+                    });
+                    break;
+                case 1: //Name
+                    Database.Data.Sort(delegate (Item x, Item y) {
+                        if (x.Name == null && y.Name == null) return 0;
+                        else if (x.Name == null) return -1;
+                        else if (y.Name == null) return 1;
+                        else return x.Name.CompareTo(y.Name);
+                    });
+                    break;
+                case 2: //Price
+                    Database.Data.Sort(delegate (Item x, Item y) {
+                        return x.Price.CompareTo(y.Price);
+                    });
+                    break;
+                case 3: //stock
+                    Database.Data.Sort(delegate (Item x, Item y) {
+                        return x.Stock.CompareTo(y.Stock);
+                    });
+                    break;
+            }
+            fillDisplay();
+
+            
+        }
+
+        private void fillDisplay() {
+            lblId.Items.Clear();
+            lblProduct.Items.Clear();
+            lblPrice.Items.Clear();
+            lblStock.Items.Clear();
+            foreach (Item i in Database.Data)
+            {
+                lblId.Items.Add(i.Id);
+                lblProduct.Items.Add(i.Name);
+                lblPrice.Items.Add(i.Price);
+                lblStock.Items.Add(i.Stock);
+            }
+        }
+
+        private void lblId_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
