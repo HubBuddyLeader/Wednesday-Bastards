@@ -39,7 +39,10 @@ namespace dp
             AddForm addForm = new AddForm();
             addForm.Show();
         }
-
+        protected override void OnFormClosing(FormClosingEventArgs e)
+        {
+            Application.Exit();
+        }
         private void lblExit_Click(object sender, EventArgs e)
         {
             Application.Exit();
