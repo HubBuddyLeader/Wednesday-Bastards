@@ -16,7 +16,7 @@ namespace dp
         private int _id = 0, _stock;
         private double _price;
 
-        fm_Database MainForm = new fm_Database();
+        //fm_Database MainForm = new fm_Database();
 
         public AddForm()
         {
@@ -55,14 +55,32 @@ namespace dp
 
         private void button1_Click(object sender, EventArgs e)
         {
-            MainForm.Refresh();
-            MainForm.addToListBox();
+            onClose();
             this.Close();
+
+        }
+
+        protected override void OnFormClosing(FormClosingEventArgs e)
+        {
+            onClose();
+        }
+
+        private void onClose() {
+            //What to do when window is closed by either x or button
+            if (System.Windows.Forms.Application.OpenForms["fm_Database"] != null) //gets current instance
+            {
+                (System.Windows.Forms.Application.OpenForms["fm_Database"] as fm_Database).fillDisplay();
+            }
         }
 
         private void label1_Click(object sender, EventArgs e)
         {
             // Do nothing...
+        }
+
+        private void AddForm_Load(object sender, EventArgs e)
+        {
+
         }
 
         private void txtStock_TextChanged(object sender, EventArgs e)

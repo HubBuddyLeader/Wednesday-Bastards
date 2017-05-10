@@ -30,6 +30,7 @@ namespace dp
 
         private void lblBack_Click(object sender, EventArgs e)
         {
+            onClose();
             this.Close();
         }
 
@@ -72,7 +73,18 @@ namespace dp
                 }
             }
         }
-
+        private void onClose()
+        {
+            //What to do when window is closed by either x or button
+            if (System.Windows.Forms.Application.OpenForms["fm_Database"] != null) //gets current instance
+            {
+                (System.Windows.Forms.Application.OpenForms["fm_Database"] as fm_Database).fillDisplay();
+            }
+        }
+        protected override void OnFormClosing(FormClosingEventArgs e)
+        {
+            onClose();
+        }
         private void lblProduct_Click(object sender, EventArgs e)
         {
             // do nothing...

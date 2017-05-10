@@ -16,17 +16,7 @@ namespace dp
         {
             InitializeComponent();
 
-
-            Database.Data.Add(new dp.Item("Ashit", 100, 5, 0));
-            Database.Data.Add(new dp.Item("Cfuck", 0, 7, 1));
-            Database.Data.Add(new dp.Item("Bshit2", 5, 18, 2));
-
             fillDisplay();
-        }
-
-        public void addToListBox()
-        {
-            lblProduct.Refresh();
         }
 
         private void pbShitImage_Click(object sender, EventArgs e)
@@ -42,9 +32,6 @@ namespace dp
         private void lbProduct_SelectedIndexChanged(object sender, EventArgs e)
         {
             // Do nothing...
-            lblProduct.Items.Clear();
-
-            fillDisplay();
         }
 
         private void addRecordToolStripMenuItem_Click(object sender, EventArgs e)
@@ -76,7 +63,6 @@ namespace dp
 
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
-          //  object selected = this.sortBox.SelectedItem;
             switch (this.sortBox.SelectedIndex) {
                 case 0: //ID
                     Database.Data.Sort(delegate(Item x, Item y) {
@@ -107,7 +93,7 @@ namespace dp
             
         }
 
-        private void fillDisplay() {
+        public void fillDisplay() {
             lblId.Items.Clear();
             lblProduct.Items.Clear();
             lblPrice.Items.Clear();

@@ -55,9 +55,9 @@
             this.grpInputData.Controls.Add(this.txtPrice);
             this.grpInputData.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.grpInputData.Location = new System.Drawing.Point(419, 206);
-            this.grpInputData.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.grpInputData.Margin = new System.Windows.Forms.Padding(5);
             this.grpInputData.Name = "grpInputData";
-            this.grpInputData.Padding = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.grpInputData.Padding = new System.Windows.Forms.Padding(5);
             this.grpInputData.Size = new System.Drawing.Size(733, 554);
             this.grpInputData.TabIndex = 6;
             this.grpInputData.TabStop = false;
@@ -68,13 +68,13 @@
             this.btnInsert.BackColor = System.Drawing.Color.White;
             this.btnInsert.ForeColor = System.Drawing.Color.Black;
             this.btnInsert.Location = new System.Drawing.Point(437, 489);
-            this.btnInsert.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnInsert.Margin = new System.Windows.Forms.Padding(4);
             this.btnInsert.Name = "btnInsert";
             this.btnInsert.Size = new System.Drawing.Size(288, 58);
-            this.btnInsert.TabIndex = 17;
-            this.btnInsert.Text = "Insert";
-            this.btnInsert.UseVisualStyleBackColor = false;
-            this.btnInsert.Click += new System.EventHandler(this.btnUpdate_Click);
+            this.btnInsert.TabIndex = 0;
+            this.btnInsert.Text = "Upload";
+            this.btnInsert.UseVisualStyleBackColor = true;
+            this.btnInsert.Click += new System.EventHandler(this.btnInsert_Click);
             // 
             // lblStock
             // 
@@ -112,7 +112,7 @@
             // txtProduct
             // 
             this.txtProduct.Location = new System.Drawing.Point(251, 113);
-            this.txtProduct.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.txtProduct.Margin = new System.Windows.Forms.Padding(5);
             this.txtProduct.Name = "txtProduct";
             this.txtProduct.Size = new System.Drawing.Size(369, 38);
             this.txtProduct.TabIndex = 2;
@@ -121,7 +121,7 @@
             // txtStock
             // 
             this.txtStock.Location = new System.Drawing.Point(251, 367);
-            this.txtStock.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.txtStock.Margin = new System.Windows.Forms.Padding(5);
             this.txtStock.Name = "txtStock";
             this.txtStock.Size = new System.Drawing.Size(369, 38);
             this.txtStock.TabIndex = 4;
@@ -129,7 +129,7 @@
             // txtPrice
             // 
             this.txtPrice.Location = new System.Drawing.Point(251, 236);
-            this.txtPrice.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.txtPrice.Margin = new System.Windows.Forms.Padding(5);
             this.txtPrice.Name = "txtPrice";
             this.txtPrice.Size = new System.Drawing.Size(369, 38);
             this.txtPrice.TabIndex = 3;
@@ -152,7 +152,7 @@
             this.lblClose.BackColor = System.Drawing.Color.White;
             this.lblClose.ForeColor = System.Drawing.Color.Black;
             this.lblClose.Location = new System.Drawing.Point(1513, 1069);
-            this.lblClose.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.lblClose.Margin = new System.Windows.Forms.Padding(4);
             this.lblClose.Name = "lblClose";
             this.lblClose.Size = new System.Drawing.Size(288, 58);
             this.lblClose.TabIndex = 16;
@@ -175,22 +175,17 @@
             // 
             // btnUpdate
             // 
-            this.btnInsert.ForeColor = System.Drawing.Color.Black;
-            this.btnInsert.Location = new System.Drawing.Point(437, 489);
-            this.btnInsert.Margin = new System.Windows.Forms.Padding(4);
-            this.btnInsert.Name = "btnUpdate";
-            this.btnInsert.Size = new System.Drawing.Size(288, 58);
-            this.btnInsert.TabIndex = 0;
-            this.btnInsert.Text = "Upload";
-            this.btnInsert.UseVisualStyleBackColor = true;
-            this.btnInsert.Click += new System.EventHandler(this.btnInsert_Click);
+            this.btnUpdate.Location = new System.Drawing.Point(0, 0);
+            this.btnUpdate.Name = "btnUpdate";
+            this.btnUpdate.Size = new System.Drawing.Size(75, 23);
+            this.btnUpdate.TabIndex = 0;
             // 
             // button1
             // 
             this.button1.BackColor = System.Drawing.Color.White;
             this.button1.ForeColor = System.Drawing.Color.Black;
             this.button1.Location = new System.Drawing.Point(1256, 897);
-            this.button1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button1.Margin = new System.Windows.Forms.Padding(4);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(288, 58);
             this.button1.TabIndex = 17;
@@ -209,9 +204,10 @@
             this.Controls.Add(this.lblClose);
             this.Controls.Add(this.lblTitle);
             this.Controls.Add(this.grpInputData);
-            this.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.Margin = new System.Windows.Forms.Padding(5);
             this.Name = "AddForm";
             this.Text = "Add Record";
+            this.Load += new System.EventHandler(this.AddForm_Load);
             this.grpInputData.ResumeLayout(false);
             this.grpInputData.PerformLayout();
             this.ResumeLayout(false);

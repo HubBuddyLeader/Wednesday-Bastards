@@ -8,7 +8,7 @@ namespace dp
 {
     public static class Database
     {
-        // Global
+        // FUCK IT, IT'S GLOBAL
         public static List<Item> Data = new List<Item>();
     }
 }
