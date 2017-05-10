@@ -15,23 +15,39 @@ namespace dp
         public fm_Database()
         {
             InitializeComponent();
+
+
+            Database.Data.Add(new dp.Item("shit", 2, 5, 0));
+
+            foreach (Item product in Database.Data)
+            {
+                lblProduct.Items.Add(product.Name);
+            }
+        }
+
+        public void addToListBox()
+        {
+            lblProduct.Refresh();
         }
 
         private void pbShitImage_Click(object sender, EventArgs e)
         {
-            // do nothing...
+            // Do nothing...
         }
 
         private void lblTitle_Click(object sender, EventArgs e)
         {
-            // do nothing...
+            // Do nothing...
         }
 
         private void lbProduct_SelectedIndexChanged(object sender, EventArgs e)
         {
+            // Do nothing...
+            lblProduct.Items.Clear();
+
             foreach (Item product in Database.Data)
             {
-                lblProduct.Text = product.Name;
+                lblProduct.Items.Add(product.Name);
             }
         }
 
@@ -54,12 +70,12 @@ namespace dp
 
         private void fm_Database_Load(object sender, EventArgs e)
         {
-            // do nothing...
+            // Do nothing...
         }
 
         private void lblProducts_Click(object sender, EventArgs e)
         {
-            // do nothing...
+            // Do nothing...
         }
     }
 }

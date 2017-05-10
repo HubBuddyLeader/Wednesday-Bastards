@@ -56,6 +56,7 @@ namespace dp
         private void button1_Click(object sender, EventArgs e)
         {
             MainForm.Refresh();
+            MainForm.addToListBox();
             this.Close();
         }
 
@@ -92,7 +93,6 @@ namespace dp
                 _validate += "Stock must be a full number \n";
             }
 
-
             if (_validate == "")
             {
                 this.errorLabel.Hide();
@@ -112,10 +112,7 @@ namespace dp
                 this.errorLabel.Text += _validate;
                 this.errorLabel.Show();
                 _validate = "";
-
             }
         }
-
-        
     }
 }
