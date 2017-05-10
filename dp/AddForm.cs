@@ -12,11 +12,12 @@ namespace dp
 {
     public partial class AddForm : Form
     {
-        Form secondForm = new Form();
-
         private String _name, _validate = "";
         private int _id = 0, _stock;
         private double _price;
+
+        fm_Database MainForm = new fm_Database();
+
         public AddForm()
         {
             InitializeComponent();
@@ -24,51 +25,54 @@ namespace dp
 
         private void lblBack_Click(object sender, EventArgs e)
         {
-			this.Hide();
+			// Do nothing...
         }
 
         private void txtProduct_TextChanged(object sender, EventArgs e)
         {
-        
+            // Do nothing...
         }
 
         private void txtPrice_TextChanged(object sender, EventArgs e)
         {
-            
+            // Do nothing...
         }
 
         private void errorLabel_Click(object sender, EventArgs e)
         {
-
+            // Do nothing...
         }
 
         private void lblClose_Click(object sender, EventArgs e)
         {
-            this.Close();
+            // Do nothing...
         }
 
         private void btnUpdate_Click(object sender, EventArgs e)
         {
-
+            // Do nothing...
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
+            MainForm.Refresh();
             this.Close();
         }
 
         private void label1_Click(object sender, EventArgs e)
         {
-
+            // Do nothing...
         }
 
         private void txtStock_TextChanged(object sender, EventArgs e)
         {
-           
+            // Do nothing...
         }
 
         private void btnInsert_Click(object sender, EventArgs e)
         {
+            this.errorLabel.Text = "";
+
             //Validation
             this.errorLabel.Text = "Error : \n";
 
@@ -92,14 +96,19 @@ namespace dp
             if (_validate == "")
             {
                 this.errorLabel.Hide();
-                //add item to dataBase
+                // Add item to dataBase
                 Database.Data.Add(new Item(_name, _stock, _price, _id));
                 _id++;
-                this.errorLabel.Text = "FUCK! IT WORKED!" + Database.Data[0].Name; //+ Database.Data[1].Name;
+                this.errorLabel.Text = "Recorded added successfully! " + Database.Data[Database.Data.Count-1].Name;
                 this.errorLabel.Show();
+
+                // Clear Boxes
+                this.txtProduct.Text = "";
+                this.txtPrice.Text = "";
+                this.txtStock.Text = "";
             }
             else {
-                //Display error then clear
+                // Display error then clear
                 this.errorLabel.Text += _validate;
                 this.errorLabel.Show();
                 _validate = "";

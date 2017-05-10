@@ -12,10 +12,6 @@ namespace dp
 {
     public partial class fm_Database : Form
     {
-
-        AddForm addForm = new AddForm();
-        EditForm editForm = new EditForm();
-
         public fm_Database()
         {
             InitializeComponent();
@@ -23,21 +19,25 @@ namespace dp
 
         private void pbShitImage_Click(object sender, EventArgs e)
         {
-
+            // do nothing...
         }
 
         private void lblTitle_Click(object sender, EventArgs e)
         {
-
+            // do nothing...
         }
 
         private void lbProduct_SelectedIndexChanged(object sender, EventArgs e)
         {
-
+            foreach (Item product in Database.Data)
+            {
+                lblProduct.Text = product.Name;
+            }
         }
 
         private void addRecordToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            AddForm addForm = new AddForm();
             addForm.Show();
         }
 
@@ -48,19 +48,18 @@ namespace dp
 
         private void editRecordToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            EditForm editForm = new EditForm();
             editForm.Show();
         }
 
         private void fm_Database_Load(object sender, EventArgs e)
         {
-
+            // do nothing...
         }
 
         private void lblProducts_Click(object sender, EventArgs e)
         {
-
+            // do nothing...
         }
-
-
     }
 }
