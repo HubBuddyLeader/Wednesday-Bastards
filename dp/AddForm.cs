@@ -1,11 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace dp
@@ -15,8 +9,6 @@ namespace dp
         private String _name, _validate = "";
         private int _id = 0, _stock;
         private double _price;
-
-        //fm_Database MainForm = new fm_Database();
 
         public AddForm()
         {
@@ -66,8 +58,8 @@ namespace dp
         }
 
         private void onClose() {
-            //What to do when window is closed by either x or button
-            if (System.Windows.Forms.Application.OpenForms["fm_Database"] != null) //gets current instance
+            // What to do when window is closed by either x or button
+            if (System.Windows.Forms.Application.OpenForms["fm_Database"] != null) // Gets current instance
             {
                 (System.Windows.Forms.Application.OpenForms["fm_Database"] as fm_Database).fillDisplay();
             }
@@ -80,7 +72,7 @@ namespace dp
 
         private void AddForm_Load(object sender, EventArgs e)
         {
-
+            // Do nothing...
         }
 
         private void txtStock_TextChanged(object sender, EventArgs e)

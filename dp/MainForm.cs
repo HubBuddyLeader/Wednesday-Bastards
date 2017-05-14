@@ -1,11 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace dp
@@ -67,12 +60,12 @@ namespace dp
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
             switch (this.sortBox.SelectedIndex) {
-                case 0: //ID
+                case 0: // ID
                     Database.Data.Sort(delegate(Item x, Item y) {
                         return x.Id.CompareTo(y.Id);
                     });
                     break;
-                case 1: //Name
+                case 1: // Name
                     Database.Data.Sort(delegate (Item x, Item y) {
                         if (x.Name == null && y.Name == null) return 0;
                         else if (x.Name == null) return -1;
@@ -80,20 +73,18 @@ namespace dp
                         else return x.Name.CompareTo(y.Name);
                     });
                     break;
-                case 2: //Price
+                case 2: // Price
                     Database.Data.Sort(delegate (Item x, Item y) {
                         return x.Price.CompareTo(y.Price);
                     });
                     break;
-                case 3: //stock
+                case 3: // Stock
                     Database.Data.Sort(delegate (Item x, Item y) {
                         return x.Stock.CompareTo(y.Stock);
                     });
                     break;
             }
             fillDisplay();
-
-            
         }
 
         public void fillDisplay() {
@@ -112,12 +103,12 @@ namespace dp
 
         private void lblId_SelectedIndexChanged(object sender, EventArgs e)
         {
-
+            // Do nothing...
         }
 
         private void label2_Click(object sender, EventArgs e)
         {
-
+            // Do nothing...
         }
     }
 }

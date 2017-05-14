@@ -1,11 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace dp
@@ -36,12 +29,12 @@ namespace dp
 
         private void grpInputData_Enter(object sender, EventArgs e)
         {
-            // do nothing...
+            // Do nothing...
         }
 
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
-            // do nothing...
+            // Do nothing...
         }
 
         private void btnUpload_Click(object sender, EventArgs e)
@@ -73,10 +66,11 @@ namespace dp
                 }
             }
         }
+
         private void onClose()
         {
-            //What to do when window is closed by either x or button
-            if (System.Windows.Forms.Application.OpenForms["fm_Database"] != null) //gets current instance
+            // What to do when window is closed by either x or button.
+            if (System.Windows.Forms.Application.OpenForms["fm_Database"] != null) // Gets current instance.
             {
                 (System.Windows.Forms.Application.OpenForms["fm_Database"] as fm_Database).fillDisplay();
             }
@@ -87,7 +81,7 @@ namespace dp
         }
         private void lblProduct_Click(object sender, EventArgs e)
         {
-            // do nothing...
+            // Do nothing...
         }
     }
 }
