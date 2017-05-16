@@ -110,5 +110,10 @@ namespace dp
         {
             // Do nothing...
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            // FOR IMPLEMENTATION ALI (is a homo)
+        }
     }
 }

@@ -47,6 +47,7 @@
             this.lblId = new System.Windows.Forms.ListBox();
             this.label1 = new System.Windows.Forms.Label();
             this.sortLabel = new System.Windows.Forms.Label();
+            this.btnExport = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pbShitImage)).BeginInit();
             this.msNav.SuspendLayout();
             this.SuspendLayout();
@@ -213,7 +214,7 @@
             "Price",
             "Stock"});
             this.sortBox.Location = new System.Drawing.Point(961, 195);
-            this.sortBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.sortBox.Margin = new System.Windows.Forms.Padding(2);
             this.sortBox.Name = "sortBox";
             this.sortBox.Size = new System.Drawing.Size(144, 33);
             this.sortBox.TabIndex = 19;
@@ -227,7 +228,7 @@
             this.lblId.FormattingEnabled = true;
             this.lblId.ItemHeight = 25;
             this.lblId.Location = new System.Drawing.Point(416, 286);
-            this.lblId.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.lblId.Margin = new System.Windows.Forms.Padding(2);
             this.lblId.Name = "lblId";
             this.lblId.Size = new System.Drawing.Size(79, 375);
             this.lblId.TabIndex = 20;
@@ -254,12 +255,28 @@
             this.sortLabel.Text = "Sort by:";
             this.sortLabel.Click += new System.EventHandler(this.label2_Click);
             // 
+            // btnExport
+            // 
+            this.btnExport.BackColor = System.Drawing.Color.White;
+            this.btnExport.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.btnExport.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DimGray;
+            this.btnExport.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.btnExport.ForeColor = System.Drawing.Color.Black;
+            this.btnExport.Location = new System.Drawing.Point(12, 723);
+            this.btnExport.Name = "btnExport";
+            this.btnExport.Size = new System.Drawing.Size(216, 47);
+            this.btnExport.TabIndex = 23;
+            this.btnExport.Text = "Export CSV";
+            this.btnExport.UseVisualStyleBackColor = false;
+            this.btnExport.Click += new System.EventHandler(this.button1_Click);
+            // 
             // fm_Database
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Black;
             this.ClientSize = new System.Drawing.Size(1170, 782);
+            this.Controls.Add(this.btnExport);
             this.Controls.Add(this.sortLabel);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.lblId);
@@ -306,6 +323,7 @@
         private System.Windows.Forms.ListBox lblId;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label sortLabel;
+        private System.Windows.Forms.Button btnExport;
     }
 }
 
